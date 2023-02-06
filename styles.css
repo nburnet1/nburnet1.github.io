@@ -6,6 +6,7 @@ body{
    
 }
 nav {
+    margin-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,10 +51,10 @@ li{
     
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500px) or (max-height: 820px) {
     #profile-pic{
         display: flex;
-        border-radius: 50%;
-        width: 200px;
-    } 
+        width: 150px;
+    }
+
 }
