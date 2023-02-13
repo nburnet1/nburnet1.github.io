@@ -1,9 +1,22 @@
+html{
+    padding:0;
+    margin: 0;
+    font-size: auto fit-content;
+}
 body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     background-color: #08246b;
 
+}
+
+main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 nav {
@@ -24,6 +37,17 @@ nav ul {
 
 }
 
+.nav-link{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+#phone, #heart-line,#user{
+    padding-right: 5px;
+}
+
 a:hover {
     color: Yellow;
 }
@@ -31,10 +55,10 @@ a:hover {
 a {
     color: whitesmoke;
     text-decoration: none;
-
 }
 
 li {
+
     margin: 10px;
 }
 
@@ -51,52 +75,49 @@ li {
     background-color:  #c0c0c0;
     color: black;
     border: solid 2px #e6e9ef ;
+    border-right: solid 2px black ;
+    border-bottom: solid 2px black ;
     padding: 5px;
 
 }
 
-#about, #projects{
-    /* background-color: #c0c0c0; */
-    border-start-end-radius: 99%;
-    border-bottom-right-radius: 99%;
-    border-top: solid 2px #e6e9ef ;
-    border-right: solid 2px #e6e9ef;
-    border-bottom: solid 2px #e6e9ef ;
-    padding-left: 3vw;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    height: 100vh;
+#about, #projects, #contact{
+    background-color: #c0c0c0;
+    border: solid 2px #e6e9ef ;
+    border-right: solid 2px black ;
+    border-bottom: solid 2px black ;
+
+    width: 90vw;
+    height: 95vh;
+    margin-bottom: 5vh;
+
+
     
 }
 
-#about-header, #projects-header {
-    color: #e6e9ef;
+#about-header, #projects-header, #contact-header {
+    padding: 0vh 2vw;
+    background: -webkit-linear-gradient(left,#08246b,#a5cef7);
+    color: #e6e9ef; 
+
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items: center;
     
+    
+}
+
+h2{
+    /* margin-left: 100px; */
 }
 #about-information{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 
 }
 
-#projects, #contact{
-    margin-top: 5vh;
-}
 
-#contact{
-    border-top-right-radius: 99%;
-    border-top-left-radius: 99%;
-    /* border-right: solid 2px #e6e9ef;
-    border-left: solid 2px #e6e9ef; */ 
-    border-top: solid 1px #e6e9ef ;
-    padding-left: 3vw;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    height: 50vh;
-}
+
 
 
 
@@ -108,4 +129,9 @@ li {
         width: 150px;
     }
 
+    #quick-contact{
+        padding-bottom: 5vh;
+    }
+
 }
+
