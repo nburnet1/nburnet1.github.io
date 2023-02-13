@@ -29,11 +29,10 @@ nav {
     height: 100vh;
     color: #e6e9ef;
 }
-
 nav ul {
     display: flex;
     list-style-type: none;
-    padding-right: 50px;
+    padding: 0;
 
 }
 
@@ -44,9 +43,9 @@ nav ul {
     flex-direction: row;
     align-items: center;
 }
-#phone, #heart-line,#user{
+/* #heart-line,#user{
     padding-right: 5px;
-}
+} */
 
 a:hover {
     color: Yellow;
@@ -81,25 +80,21 @@ li {
 
 }
 
-#about, #projects, #contact{
+#about{
     background-color: #c0c0c0;
     border: solid 2px #e6e9ef ;
     border-right: solid 2px black ;
     border-bottom: solid 2px black ;
 
-    width: 90vw;
-    height: 95vh;
+    width: 90%;
+    height: 95%;
     margin-bottom: 5vh;
-
-
-    
 }
 
-#about-header, #projects-header, #contact-header {
+#about-header, #projects-header {
     padding: 0vh 2vw;
     background: -webkit-linear-gradient(left,#08246b,#a5cef7);
     color: #e6e9ef; 
-
     display: flex;
     justify-content:space-between;
     flex-direction: row;
@@ -108,13 +103,56 @@ li {
     
 }
 
-h2{
-    /* margin-left: 100px; */
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-#about-information{
+
+.card{
+    background-color: white;
+    width: 85%;
+    height: auto fit-content;
+    margin: 10px;
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px;
+    border: solid 2px black ;
+    border-right: solid 2px #e6e9ef ;
+    border-bottom: solid 2px #e6e9ef ;
+}
+.card-header{
+    background-color: #08246b;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+.card-list{
+    width: 367px;
+}
+
+footer{
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+
+}
 
 
-}
+
+
+
+
+
+
 
 
 
@@ -129,9 +167,20 @@ h2{
         width: 150px;
     }
 
-    #quick-contact{
-        padding-bottom: 5vh;
-    }
 
 }
+
+@media (max-height: 700px ){
+    #profile-pic {
+        padding-top: 100px;
+    }
+
+
+    #about{
+        margin-top: 20px;
+    }
+
+
+}
+
 
