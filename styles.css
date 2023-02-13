@@ -43,9 +43,6 @@ nav ul {
     flex-direction: row;
     align-items: center;
 }
-/* #heart-line,#user{
-    padding-right: 5px;
-} */
 
 a:hover {
     color: Yellow;
@@ -80,7 +77,7 @@ li {
 
 }
 
-#about{
+#about, #projects{
     background-color: #c0c0c0;
     border: solid 2px #e6e9ef ;
     border-right: solid 2px black ;
@@ -136,7 +133,22 @@ li {
     width: 367px;
 }
 
+a i{
+    color: black;
+}
+a i:hover{
+    color:#08246b;
+}
+
 footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h2{
+    color: white;
 }
 
 footer ul {
@@ -163,8 +175,10 @@ footer ul {
 
 @media (max-width: 500px) or (max-height: 820px) {
     #profile-pic {
-        display: flex;
         width: 150px;
+    }
+    nav{
+        height: 800px;
     }
 
 
