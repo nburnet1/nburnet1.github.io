@@ -170,17 +170,3 @@ footer ul {
 
 }
 
-@media (max-height: 700px ){
-    #profile-pic {
-        padding-top: 100px;
-    }
-
-
-    #about{
-        margin-top: 20px;
-    }
-
-
-}
-
-
