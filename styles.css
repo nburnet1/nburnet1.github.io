@@ -160,7 +160,7 @@ footer ul {
 
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) or (max-height: 700px){
     #profile-pic {
         width: 75px;
     }
