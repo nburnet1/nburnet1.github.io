@@ -31,7 +31,7 @@ nav {
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 800px;
+    height: 100vh;
     color: #e6e9ef;
 }
 nav ul {
@@ -164,10 +164,10 @@ footer ul {
 
 }
 
-@media (max-width: 700px) or (max-height: 700px){
-    #profile-pic {
+@media (max-width: 700px) or (max-height: 750px){
+    /* #profile-pic {
         width: 75px;
-    }
+    } */
     nav{
         height: 800px;
     }
