@@ -3,6 +3,10 @@ html{
     margin: 0;
     font-size: auto fit-content;
 }
+
+h1{
+    font-size: 25pt;
+}
 body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
