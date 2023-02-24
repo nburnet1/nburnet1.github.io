@@ -173,10 +173,10 @@ footer ul {
         width: 75px;
     } */
     nav{
-        height: 800px;
+        height: 800px !important; 
     }
     h1{
-        font-size: 35pt;
+        font-size: 35pt !important;
     }
 
 
