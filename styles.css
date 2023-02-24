@@ -168,15 +168,12 @@ footer ul {
 
 }
 
-@media (max-width: 700px) or (max-height: 750px){
-    /* #profile-pic {
-        width: 75px;
-    } */
-    nav{
-        height: 800px !important; 
-    }
+@media (max-width: 750px){
     h1{
         font-size: 35pt !important;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 
 
