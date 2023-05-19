@@ -7,40 +7,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hello! My name is Noah Burnette!
     I am a UNCA student currently open to Software Engineering roles.">
-    <meta name="keywords" content="Portfolio, Software Engineering, Programming, University of North Carolina, Asheville,UNCA">
+    <meta name="keywords"
+        content="Portfolio, Software Engineering, Programming, University of North Carolina, Asheville,UNCA">
     <meta name="author" content="Noah Burnette">
-
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
     <link rel="icon" type="image/x-icon" href="https://win98icons.alexmeub.com/icons/png/user_world-0.png">
     <title>Noah Burnette</title>
 </head>
 
-<body id="start">
+<body class="start" id="start">
+    <div class="top-nav">
+        <a class="nav-link" onclick="togMenu()"><img class="theme-icon" id="settings-click" alt="settings button"
+                src="https://win98icons.alexmeub.com/icons/png/gears-0.png" /></a>
+    </div>
+    <div class="settings" onblur="blurred()">
+        <div class="settings-dropdown">
 
+            <a class="theme-entry" id="windows-theme" onclick="windough()">
+                <img class="theme-icon" alt="windows theme"
+                    src="https://win98icons.alexmeub.com/icons/png/computer_win.png" />
+
+                <p class="theme-des" id="">Windough</p>
+            </a>
+            <a class="theme-entry" id="eco-theme" onclick="eco()">
+                <img class="theme-icon" alt="eco theme" src="https://win98icons.alexmeub.com/icons/png/tree-0.png" />
+                <p class="theme-des" id="eco-des">Eco</p>
+            </a>
+            <a class="theme-entry" id="charcoal-theme" onclick="charcoal()">
+                <img class="theme-icon" id="charcoal-des" alt="charcoal theme"
+                    src="https://win98icons.alexmeub.com/icons/png/program_manager-0.png" />
+                <p class="theme-des">Charcoal</p>
+            </a>
+        </div>
+
+
+    </div>
     <nav>
         <h1>Noah Burnette</h1>
         <ul>
-            <li><a class="nav-link" href="#about"><img class="nav-icon" alt="person" id="user" src="https://win98icons.alexmeub.com/icons/png/address_book_user.png"/>About</a></li>
-            <li><a class="nav-link" href="#projects"><img class="nav-icon" alt="computer" id="heart-line" src="https://win98icons.alexmeub.com/icons/png/computer_taskmgr-0.png">Projects</a></li>
-            <li><a class="nav-link" href="#contact"><img class="nav-icon" alt="phone" id="phone" src="https://win98icons.alexmeub.com/icons/png/modem-3.png"/>Contact</a></li>
+            <li><a class="nav-link" href="#about"><img class="nav-icon" alt="person" id="user"
+                        src="https://win98icons.alexmeub.com/icons/png/address_book_user.png" />About</a>
+            </li>
+            <li><a class="nav-link" href="#projects"><img class="nav-icon" alt="computer" id="heart-line"
+                        src="https://win98icons.alexmeub.com/icons/png/computer_taskmgr-0.png">Projects</a></li>
+            <li><a class="nav-link" href="#contact"><img class="nav-icon" alt="phone" id="phone"
+                        src="https://win98icons.alexmeub.com/icons/png/modem-3.png" />Contact</a></li>
         </ul>
 
     </nav>
     <main>
-        <section id="about">
-            <header id="about-header"><h2>About Me!</h2><a href="#start"><img alt="home" src="https://win98icons.alexmeub.com/icons/png/address_book_home.png"/><div>Home</div></a></header>
+        <section class="card-section" id="about">
+            <header class="topic-header" id="about-header">
+                <h2>About Me!</h2>
+                <a href="#start">
+                    <img alt="home" src="https://win98icons.alexmeub.com/icons/png/address_book_home.png" />
+                    <div>Home</div>
+                </a>
+            </header>
 
             <div class="information">
 
-                
+
                 <div class="card">
                     <div class="card-list">
-                        <header class="card-header"><img class="nav-icon" alt="globe"src="https://win98icons.alexmeub.com/icons/png/entire_network_globe-2.png"/><b>Education</b></header>
+                        <header class="card-header">
+                            <img class="nav-icon" alt="globe"
+                                src="https://win98icons.alexmeub.com/icons/png/entire_network_globe-2.png" />
+                            <b>Education</b>
+                        </header>
                         <i>University of North Carolina Asheville</i>
                         <ul>
                             <li>May 2020 - December 2023</li>
                             <li>B.S. Computer Science</li>
-                            <li>GPA: 3.7</li>
+                            <li>GPA: 3.76</li>
                         </ul>
                         <i>CodePath</i>
                         <ul>
@@ -62,7 +103,11 @@
 
                 <div class="card">
                     <div class="card-list">
-                        <header class="card-header"><img class="nav-icon" alt="folder" src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs_cool-2.png"/><b>Experience</b></header>
+                        <header class="card-header">
+                            <img class="nav-icon" alt="folder"
+                                src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs_cool-2.png" />
+                            <b>Experience</b>
+                        </header>
                         <i>Network Technician @ Microtech Knives</i>
                         <ul>
                             <li>2021 - Present</li>
@@ -71,13 +116,13 @@
                             <li>Perform system and database administration duties regularly.</li>
                             <li>Install and configure network and server architecture.</li>
                         </ul>
-                        
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-list">
-                        <header class="card-header"><img class="nav-icon" alt="mouse" src="https://win98icons.alexmeub.com/icons/png/mouse-0.png"/><b>Skills</b></header>
+                        <header class="card-header"><img class="nav-icon" alt="mouse"
+                                src="https://win98icons.alexmeub.com/icons/png/mouse-0.png" /><b>Skills</b></header>
                         <i>Soft Skills</i>
                         <ul>
                             <li>Agile</li>
@@ -109,14 +154,23 @@
         </section>
 
 
-        <section id="projects">
-            <header id="projects-header"><h2>Projects</h2><a href="#start"><img alt="home" src="https://win98icons.alexmeub.com/icons/png/address_book_home.png"/><div>Home</div></a></header>
+        <section class="card-section" id="projects">
+            <header class="topic-header" id="projects-header">
+                <h2>Projects</h2><a href="#start"><img alt="home"
+                        src="https://win98icons.alexmeub.com/icons/png/address_book_home.png" />
+                    <div>Home</div>
+                </a>
+            </header>
 
             <div class="information">
-                
+
                 <div class="card">
                     <div class="card-list">
-                        <header class="card-header"><img class="nav-icon" alt="computer tools" src="https://win98icons.alexmeub.com/icons/png/monitor_tweakui-0.png"/><b>Current Projects</b></header>
+                        <header class="card-header">
+                            <img class="nav-icon" alt="computer tools"
+                                src="https://win98icons.alexmeub.com/icons/png/monitor_tweakui-0.png" />
+                            <b>Current Projects</b>
+                        </header>
                         <i>Pyile (P2P Application)</i>
                         <ul>
                             <li>Implementing thick client application that transfers files and messages via P2P.</li>
@@ -127,10 +181,11 @@
                         <i>Monolithic Application for School System</i>
                         <ul>
                             <li>Responsible for DevOps</li>
-                            <li>Utilizing <a href ="https://agilemanifesto.org/"><i>Agile</i></a> Methodology</li>
+                            <li>Utilizing <a href="https://agilemanifesto.org/"><i>Agile</i></a> Methodology</li>
                             <li>Using Java and MySQL</li>
                         </ul>
-                        <a href="https://github.com/nburnet1/pytamate"><i>Pytamate (System Management Application)</i></a>
+                        <a href="https://github.com/nburnet1/pytamate"><i>Pytamate (System Management
+                                Application)</i></a>
                         <ul>
                             <li>Utilizes LAMP stack</li>
                             <li>Uses Python for system calls and YAML for configuration</li>
@@ -142,10 +197,13 @@
 
                 <div class="card">
                     <div class="card-list">
-                        <header class="card-header"><img class="nav-icon" alt="padlock" src="https://win98icons.alexmeub.com/icons/png/key_padlock-0.png"/><b>Past Projects</b></header>
+                        <header class="card-header"><img class="nav-icon" alt="padlock"
+                                src="https://win98icons.alexmeub.com/icons/png/key_padlock-0.png" /><b>Past Projects</b>
+                        </header>
                         <i>Constrained Optimization Calculator</i>
                         <ul>
-                            <li>Developed for <a class="main-link" href="https://brandstracts.com/"><i>Brandstracts</i></a></li>
+                            <li>Developed for <a class="main-link"
+                                    href="https://brandstracts.com/"><i>Brandstracts</i></a></li>
                             <li>Utilized Python's Tkinter, NumPy, and SciPy libraries</li>
                             <li>Implemented the application's business logic</li>
                             <li>Key player in DevOps</li>
@@ -157,7 +215,7 @@
                     </div>
                 </div>
 
-            </section>
+        </section>
 
 
 
@@ -165,11 +223,22 @@
         <footer id="contact">
             <h2>Contact Me!</h2>
             <ul id="quick-contact">
-                <li><a class="nav-link" href="https://github.com/nburnet1"><img class="nav-icon" alt="connected globe" src="https://win98icons.alexmeub.com/icons/png/network_internet_pcs_installer-0.png"/> Github</a></li>
-                <li><a class="nav-link" href="mailto:zs9ur2wg@duck.com"><img class="nav-icon" alt="mail"src="https://win98icons.alexmeub.com/icons/png/message_envelope_open-0.png"/> Email</a></li>
-                <li><a class="nav-link" href="https://www.linkedin.com/in/nburnet1/"><img class="nav-icon" alt="msn butterfly"src="https://win98icons.alexmeub.com/icons/png/msn3-5.png"/> LinkedIn</a></li>
+                <li><a class="nav-link" href="https://github.com/nburnet1">
+                        <img class="nav-icon" alt="connected globe"
+                            src="https://win98icons.alexmeub.com/icons/png/network_internet_pcs_installer-0.png" />
+                        Github</a></li>
+                <li><a class="nav-link" href="mailto:zs9ur2wg@duck.com">
+                        <img class="nav-icon" alt="mail"
+                            src="https://win98icons.alexmeub.com/icons/png/message_envelope_open-0.png" /> Email
+                    </a>
+                </li>
+                <li><a class="nav-link" href="https://www.linkedin.com/in/nburnet1/">
+                        <img class="nav-icon" alt="msn butterfly"
+                            src="https://win98icons.alexmeub.com/icons/png/msn3-5.png" /> LinkedIn
+                    </a>
+                </li>
             </ul>
-        <footer>
+            <footer>
 
 
 
