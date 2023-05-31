@@ -1,14 +1,116 @@
-html{
-    padding:0;
+html {
+    padding: 0;
     margin: 0;
     font-size: auto fit-content;
 }
 
-h1{
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 10px;
+
+
+}
+
+.settings {
+    /* display: none; */
+    height: auto fit-content;
+    background-color: #c0c0c0;
+    color: black;
+    border: solid 2px #e6e9ef;
+    border-right: solid 2px black;
+    border-bottom: solid 2px black;
+    padding: 5px;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 200px;
+    left: calc(95vw - 200px);
+
+}
+
+.settings-dropdown {
+    background: white;
+    border: solid 2px black;
+    border-right: solid 2px #e6e9ef;
+    border-bottom: solid 2px #e6e9ef;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.theme-icon {
+    padding: 10px;
+    height: 32px !important;
+    width: 32px !important;
+    font-size: 18pt;
+    background: #08246b;
+
+    color: white;
+    text-decoration: none;
+}
+
+.theme-icon:hover {
+    /* color: purple;
+    background: purple; */
+}
+
+.settings {
+    display: none;
+}
+
+
+.theme-entry {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+
+}
+
+.theme-entry:hover {
+    cursor: pointer;
+}
+
+.theme-entry:hover>.theme-des {
+    color: white;
+}
+
+
+.theme-des {
+    color: black;
+}
+
+.theme-des:hover {
+    color: white;
+}
+
+#windows-theme:hover {
+    background: -webkit-linear-gradient(left, #08246b, #a5cef7);
+}
+
+#eco-theme:hover {
+    background: -webkit-linear-gradient(left, #2a4b41, #4b7467);
+}
+
+#charcoal-theme:hover {
+    background: -webkit-linear-gradient(left, black, #15191d);
+}
+
+
+
+
+
+
+h1 {
     font-size: 60pt;
 }
+
 body {
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: "Pixelated MS Sans Serif", Arial;
     margin: 0;
     padding: 0;
     background-color: #08246b;
@@ -16,8 +118,8 @@ body {
 
 }
 
-main{
-    
+main {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,9 +133,10 @@ nav {
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 72px);
     color: #e6e9ef;
 }
+
 nav ul {
     display: flex;
     list-style-type: none;
@@ -41,11 +144,12 @@ nav ul {
 
 }
 
-.nav-icon{
+.nav-icon,
+.theme-icon {
     margin-right: 5px;
 }
 
-.nav-link{
+.nav-link {
     margin-top: 10px;
     display: flex;
     justify-content: flex-start;
@@ -59,8 +163,10 @@ a:hover {
 
 a {
     color: whitesmoke;
-    text-decoration: none;
+    text-decoration: none !important;
 }
+
+
 
 li {
 
@@ -77,87 +183,89 @@ li {
 #sum {
     width: 300px;
     height: auto fit-content;
-    background-color:  #c0c0c0;
+    background-color: #c0c0c0;
     color: black;
-    border: solid 2px #e6e9ef ;
-    border-right: solid 2px black ;
-    border-bottom: solid 2px black ;
+    border: solid 2px #e6e9ef;
+    border-right: solid 2px black;
+    border-bottom: solid 2px black;
     padding: 5px;
 
 }
 
-#about, #projects{
+.card-section {
     background-color: #c0c0c0;
-    border: solid 2px #e6e9ef ;
-    border-right: solid 2px black ;
-    border-bottom: solid 2px black ;
-
+    border: solid 2px #e6e9ef;
+    border-right: solid 2px black;
+    border-bottom: solid 2px black;
     width: 90%;
     height: 95%;
     margin-bottom: 5vh;
 }
 
-#about-header, #projects-header {
+.topic-header {
     padding: 0vh 2vw;
-    background: -webkit-linear-gradient(left,#08246b,#a5cef7);
-    color: #e6e9ef; 
+    background: -webkit-linear-gradient(left, #08246b, #a5cef7);
+    color: #e6e9ef;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    
-    
+
+
 }
 
-.information{
+.information {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.card{
+.card {
     background-color: white;
     width: 85%;
     height: auto fit-content;
     margin: 10px;
-    display:flex;
-    justify-content: center; 
-    align-items: center;
-    padding: 10px;
-    border: solid 2px black ;
-    border-right: solid 2px #e6e9ef ;
-    border-bottom: solid 2px #e6e9ef ;
-}
-.card-header{
-    background-color: #08246b;
-    color:white;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    
+    border: solid 2px black;
+    border-right: solid 2px #e6e9ef;
+    border-bottom: solid 2px #e6e9ef;
 }
-.card-list{
+
+.card-header {
+    background-color: #08246b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.card-list {
     width: 367px;
 }
 
-a i{
+a i {
     color: black;
     text-decoration: underline;
 }
-a i:hover{
-    color:#08246b;
+
+a i:hover {
+    color: #08246b;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-footer h2{
+footer h2 {
     color: white;
 }
 
@@ -168,8 +276,8 @@ footer ul {
 
 }
 
-@media (max-width: 750px){
-    h1{
+@media (max-width: 750px) {
+    h1 {
         font-size: 35pt !important;
         display: flex;
         justify-content: center;
@@ -179,3 +287,67 @@ footer ul {
 
 }
 
+/* CSS for Themes */
+/* ****************Charcoal****************** */
+.charcoal {
+    background-color: black;
+    color: white;
+}
+
+.charcoal-card {
+    background-color: #6f6f6f;
+    color: white;
+    border-right-color: #313b4b;
+    border-bottom-color: #313b4b;
+}
+
+.charcoal-info {
+    background-color: #15191d;
+
+}
+
+.charcoal-section {
+    border-top-color: #313b4b;
+    border-left-color: #313b4b;
+}
+
+.charcoal-card-header {
+    background-color: #15191d;
+
+}
+
+.charcoal-header {
+    background: -webkit-linear-gradient(top, black, #15191d);
+}
+
+/*****************ECO*******************/
+
+.eco {
+    background-color: #2a4b41;
+}
+
+.eco-card {
+    background-color: #c7c6c1;
+    color: black;
+    border-right-color: white;
+    border-bottom-color: white;
+}
+
+.eco-info {
+    /* background-color: #15191d; */
+
+}
+
+.eco-section {
+    border-top-color: white;
+    border-left-color: white;
+}
+
+.eco-card-header {
+    background-color: #2a4b41;
+
+}
+
+.eco-header {
+    background: -webkit-linear-gradient(left, #2a4b41, #4b7467);
+}
