@@ -22,7 +22,7 @@ html {
     border-right: solid 2px black;
     border-bottom: solid 2px black;
     padding: 5px;
-    position: relative;
+    position: absolute;
     justify-content: flex-end;
     align-items: flex-end;
     width: 200px;
@@ -133,7 +133,7 @@ nav {
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 72px);
     color: #e6e9ef;
 }
 
