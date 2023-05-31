@@ -22,7 +22,7 @@
         <a class="nav-link" onclick="togMenu()"><img class="theme-icon" id="settings-click" alt="settings button"
                 src="https://win98icons.alexmeub.com/icons/png/gears-0.png" /></a>
     </div>
-    <div class="settings" onblur="blurred()">
+    <div class="settings">
         <div class="settings-dropdown">
 
             <a class="theme-entry" id="windows-theme" onclick="windough()">
@@ -45,7 +45,7 @@
 
     </div>
     <nav>
-        <h1>Noah Burnette</h1>
+        <h1 id="name">Noah Burnette</h1>
         <ul>
             <li><a class="nav-link" href="#about"><img class="nav-icon" alt="person" id="user"
                         src="https://win98icons.alexmeub.com/icons/png/address_book_user.png" />About</a>
@@ -77,27 +77,29 @@
                                 src="https://win98icons.alexmeub.com/icons/png/entire_network_globe-2.png" />
                             <b>Education</b>
                         </header>
-                        <i>University of North Carolina Asheville</i>
-                        <ul>
-                            <li>May 2020 - December 2023</li>
-                            <li>B.S. Computer Science</li>
-                            <li>GPA: 3.76</li>
-                        </ul>
-                        <i>CodePath</i>
-                        <ul>
-                            <li>February 2022 - May 2022</li>
-                            <li>Cybersecurity</li>
-                        </ul>
-                        <i>Courses taken</i>
-                        <ul>
-                            <li>Object Oriented Programming</li>
-                            <li>Software Engineering</li>
-                            <li>Data Structures and Algorithms</li>
-                            <li>Database Management Systems</li>
-                            <li>Computer Systems</li>
-                            <li>Server Side Technology</li>
-                            <li>Theory of Computation</li>
-                        </ul>
+                        <div class="card-des">
+                            <i>University of North Carolina Asheville</i>
+                            <ul>
+                                <li>May 2020 - December 2023</li>
+                                <li>B.S. Computer Science</li>
+                                <li>GPA: 3.76</li>
+                            </ul>
+                            <i>CodePath</i>
+                            <ul>
+                                <li>February 2022 - May 2022</li>
+                                <li>Cybersecurity</li>
+                            </ul>
+                            <i>Courses taken</i>
+                            <ul>
+                                <li>Object Oriented Programming</li>
+                                <li>Software Engineering</li>
+                                <li>Data Structures and Algorithms</li>
+                                <li>Database Management Systems</li>
+                                <li>Computer Systems</li>
+                                <li>Server Side Technology</li>
+                                <li>Theory of Computation</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -108,19 +110,21 @@
                                 src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs_cool-2.png" />
                             <b>Experience</b>
                         </header>
-                        <i>Software Developer Intern @ <a href="https://sierranevada.com/"><i>Sierra Nevada Brewing Company</i></a></i>
-                        <ul>
-                            <li>2022 - Present</li>
+                        <div class="card-des">
+                            <i>Software Developer Intern @ <a href="https://sierranevada.com/"><i>Sierra Nevada Brewing Company</i></a></i>
+                            <ul>
+                                <li>2022 - Present</li>
 
-                        </ul>
-                        <i>Network Technician @ <a href="https://microtechknives.com/"><i>Microtech Knives</i></a></i>
-                        <ul>
-                            <li>2021 - Present</li>
-                            <li>Perform network analysis.</li>
-                            <li>Code automation scripts using Python and BASH.</li>
-                            <li>Perform system and database administration duties regularly.</li>
-                            <li>Install and configure network and server architecture.</li>
-                        </ul>
+                            </ul>
+                            <i>Network Technician @ <a href="https://microtechknives.com/"><i>Microtech Knives</i></a></i>
+                            <ul>
+                                <li>2021 - Present</li>
+                                <li>Perform network analysis.</li>
+                                <li>Code automation scripts using Python and BASH.</li>
+                                <li>Perform system and database administration duties regularly.</li>
+                                <li>Install and configure network and server architecture.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -128,30 +132,31 @@
                     <div class="card-list">
                         <header class="card-header"><img class="nav-icon" alt="mouse"
                                 src="https://win98icons.alexmeub.com/icons/png/mouse-0.png" /><b>Skills</b></header>
-                        <i>Soft Skills</i>
-                        <ul>
-                            <li>Agile</li>
-                            <li>Communication</li>
-                            <li>Team work</li>
-                            <li>Dependability</li>
-                            <li>Problem Solving</li>
-                            <li>Organization</li>
-                            <li>Patience</li>
-                            <li>Adaptability</li>
-                        </ul>
-                        <i>Hard Skills</i>
-                        <ul>
-                            <li>Linux</li>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>HTML/CSS/Javascript</li>
-                            <li>Git</li>
-                            <li>Shell</li>
-                            <li>IT Automation</li>
-                            <li>Network analysis</li>
-                            <li>Cybersecurity</li>
-
-                        </ul>
+                        <div class="card-des">
+                            <i>Soft Skills</i>
+                            <ul>
+                                <li>Agile</li>
+                                <li>Communication</li>
+                                <li>Team work</li>
+                                <li>Dependability</li>
+                                <li>Problem Solving</li>
+                                <li>Organization</li>
+                                <li>Patience</li>
+                                <li>Adaptability</li>
+                            </ul>
+                            <i>Hard Skills</i>
+                            <ul>
+                                <li>Linux</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>HTML/CSS/Javascript</li>
+                                <li>Git</li>
+                                <li>Shell</li>
+                                <li>IT Automation</li>
+                                <li>Network analysis</li>
+                                <li>Cybersecurity</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -176,27 +181,29 @@
                                 src="https://win98icons.alexmeub.com/icons/png/monitor_tweakui-0.png" />
                             <b>Current Projects</b>
                         </header>
-                        <i>Pyile (P2P Application)</i>
-                        <ul>
-                            <li>Implementing thick client application that transfers files and messages via P2P.</li>
-                            <li>Utilizes multi-threading, encryption, low level sockets, and user authentication</li>
-                            <li>Command line and Graphical user interface capabilities using tkinter library</li>
-                            <li>Completely configurable using YAML</li>
-                        </ul>
-                        <i>Monolithic Application for School System</i>
-                        <ul>
-                            <li>Responsible for DevOps</li>
-                            <li>Utilizing <a href="https://agilemanifesto.org/"><i>Agile</i></a> Methodology</li>
-                            <li>Using Java and MySQL</li>
-                        </ul>
-                        <a href="https://github.com/nburnet1/pytamate"><i>Pytamate (System Management
-                                Application)</i></a>
-                        <ul>
-                            <li>Utilizes LAMP stack</li>
-                            <li>Uses Python for system calls and YAML for configuration</li>
-                            <li>Deploy with GPO for automation</li>
+                        <div class="card-des">
+                            <i>Pyile (P2P Application)</i>
+                            <ul>
+                                <li>Implementing thick client application that transfers files and messages via P2P.</li>
+                                <li>Utilizes multi-threading, encryption, low level sockets, and user authentication</li>
+                                <li>Command line and Graphical user interface capabilities using tkinter library</li>
+                                <li>Completely configurable using YAML</li>
+                            </ul>
+                            <i>Monolithic Application for School System</i>
+                            <ul>
+                                <li>Responsible for DevOps</li>
+                                <li>Utilizing <a href="https://agilemanifesto.org/"><i>Agile</i></a> Methodology</li>
+                                <li>Using Java and MySQL</li>
+                            </ul>
+                            <a href="https://github.com/nburnet1/pytamate"><i>Pytamate (System Management
+                                    Application)</i></a>
+                            <ul>
+                                <li>Utilizes LAMP stack</li>
+                                <li>Uses Python for system calls and YAML for configuration</li>
+                                <li>Deploy with GPO for automation</li>
 
-                        </ul>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -205,18 +212,20 @@
                         <header class="card-header"><img class="nav-icon" alt="padlock"
                                 src="https://win98icons.alexmeub.com/icons/png/key_padlock-0.png" /><b>Past Projects</b>
                         </header>
-                        <i>Constrained Optimization Calculator</i>
-                        <ul>
-                            <li>Developed for <a class="main-link"
-                                    href="https://brandstracts.com/"><i>Brandstracts</i></a></li>
-                            <li>Utilized Python's Tkinter, NumPy, and SciPy libraries</li>
-                            <li>Implemented the application's business logic</li>
-                            <li>Key player in DevOps</li>
-                        </ul>
-                        <a href="https://github.com/nburnet1/Maze-Mazter"><i>Maze Master</i></a>
-                        <ul>
-                            <li>Dungeon Crawler using the pygame library</li>
-                        </ul>
+                        <div class="card-des">
+                            <i>Constrained Optimization Calculator</i>
+                            <ul>
+                                <li>Developed for <a class="main-link"
+                                        href="https://brandstracts.com/"><i>Brandstracts</i></a></li>
+                                <li>Utilized Python's Tkinter, NumPy, and SciPy libraries</li>
+                                <li>Implemented the application's business logic</li>
+                                <li>Key player in DevOps</li>
+                            </ul>
+                            <a href="https://github.com/nburnet1/Maze-Mazter"><i>Maze Master</i></a>
+                            <ul>
+                                <li>Dungeon Crawler using the pygame library</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 

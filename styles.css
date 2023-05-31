@@ -47,14 +47,9 @@ html {
     width: 32px !important;
     font-size: 18pt;
     background: #08246b;
-
+    transition: background 1s;
     color: white;
     text-decoration: none;
-}
-
-.theme-icon:hover {
-    /* color: purple;
-    background: purple; */
 }
 
 .settings {
@@ -114,6 +109,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #08246b;
+    transition: background 1s;
     overflow-x: hidden;
 
 }
@@ -245,6 +241,10 @@ li {
 
 }
 
+.card-des {
+    padding-top: 10px;
+}
+
 .card-list {
     width: 367px;
 }
@@ -257,6 +257,7 @@ a i {
 a i:hover {
     color: #08246b;
 }
+
 
 footer {
     display: flex;
