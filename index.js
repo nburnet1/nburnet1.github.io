@@ -7,12 +7,6 @@ const togMenu = ev => {
         menu.style.display = "none";
     }
 };
-
-const blurred = ev => {
-    console.log("blurred");
-    menu.style.display = "none";
-
-}
 const windough = ev => {
     console.log("Applying Windough Theme");
     // Body

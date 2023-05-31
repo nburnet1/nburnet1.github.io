@@ -109,7 +109,8 @@ h1 {
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: "Pixelated MS Sans Serif", Arial;
     margin: 0;
     padding: 0;
     background-color: #08246b;
