@@ -49,84 +49,22 @@ const windough = ev => {
 }
 
 const eco = ev => {
-    console.log("Applying Eco Theme");
-    // Body
-    document.querySelector("body").className = 'eco start';
-    // Icons
-    const icons = document.querySelectorAll('.theme-icon');
-    icons.forEach(element => {
-        element.className = "eco theme-icon"
-    });
-    // Topic Headers
-    const headers = document.querySelectorAll('.topic-header');
-    headers.forEach(element => {
-        element.className = "eco-header topic-header";
-    });
-    // Card Headers
-    const cardHeaders = document.querySelectorAll('.card-header');
-    cardHeaders.forEach(element => {
-        element.className = 'eco-card-header card-header';
-    });
-    // Cards
-    const cards = document.querySelectorAll('.card');
-    cards.forEach(element => {
-        element.className = 'eco-card card';
-    });
-
-    // Information
-    const infos = document.querySelectorAll('.information');
-    infos.forEach(element => {
-        element.className = 'eco-info information';
-    });
-
-    // Section
-    const sections = document.querySelectorAll('.card-section');
-    sections.forEach(element => {
-        element.className = "eco-section card-section";
-    });
-
+    const root = document.documentElement;
+    root.style.setProperty("--default-color","#2a4b41");
+    root.style.setProperty("--default-gradient", "#4b7467");
+    root.style.setProperty("--default-secondary-color","#c7c6c1");
     togMenu();
 
 
 }
 
 const charcoal = ev => {
-    console.log("Applying Night theme");
-    // Body
-    document.querySelector("body").className = 'charcoal start';
-    // Icons
-    const icons = document.querySelectorAll('.theme-icon');
-    icons.forEach(element => {
-        element.className = "charcoal theme-icon"
-    });
-    // Topic Headers
-    const headers = document.querySelectorAll('.topic-header');
-    headers.forEach(element => {
-        element.className = "charcoal-header topic-header";
-    });
-    // Card Headers
-    const cardHeaders = document.querySelectorAll('.card-header');
-    cardHeaders.forEach(element => {
-        element.className = 'charcoal-card-header card-header';
-    });
-    // Cards
-    const cards = document.querySelectorAll('.card');
-    cards.forEach(element => {
-        element.className = 'charcoal-card card';
-    });
-
-    // Information
-    const infos = document.querySelectorAll('.information');
-    infos.forEach(element => {
-        element.className = 'charcoal-info information';
-    });
-
-    // Section
-    const sections = document.querySelectorAll('.card-section');
-    sections.forEach(element => {
-        element.className = "charcoal-section card-section";
-    });
-
+    const root = document.documentElement;
+    root.style.setProperty("--default-color","black");
+    root.style.setProperty("--default-gradient", "#15191d");
+    root.style.setProperty("--default-secondary-color","#15191d");
+    root.style.setProperty("--default-tertiary-color","#6f6f6f")
+    root.style.setProperty("--default-font-color", "white");
     togMenu();
 
 }

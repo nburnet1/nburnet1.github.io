@@ -1,3 +1,101 @@
+:root{
+    --default-color: #008080;
+    --default-secondary-color: #c0c0c0;
+    --default-tertiary-color: white;
+    --default-gradient: #000080;
+    --default-accent: #e6e9ef;
+    --default-font-color: black;
+    --default-secondary-font-color: white;
+    --default-highlight-color: Yellow;
+    --default-secondary-highlight-color: #000080;
+    --default-border-color: black;
+    --default-secondary-border-color: #e6e9ef;
+    --default-temp-color: white;
+    
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    10%{
+        opacity: .1;
+    }
+    20%{
+        opacity: .2;
+    }
+    30%{
+        opacity: .3;
+    }
+    40%{
+        opacity: .4;
+    }
+    50%{
+        opacity: .5;
+    }
+    60%{
+        opacity: .6;
+    }
+    70%{
+        opacity: .7;
+    }
+    80%{
+        opacity: .8;
+    }
+    90%{
+        opacity: .9;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+@keyframes fadeNav{
+    0% {
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    45%{
+        opacity: .1
+    }
+    50%{
+        opacity: .2;
+    }
+    55%{
+        opacity: .3;
+    }
+    60% {
+        opacity: .4;
+    }
+    65%{
+        opacity: .5;
+    }
+    70% {
+        opacity: .6;
+    }
+    75%{
+        opacity: .7;
+    }
+    80% {
+        opacity: .8;
+    }
+    90% {
+        opacity: .9;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
 html {
     padding: 0;
     margin: 0;
@@ -15,7 +113,7 @@ html {
 
 .settings {
     /* display: none; */
-    height: auto fit-content;
+    height: auto fit -content;
     background-color: #c0c0c0;
     color: black;
     border: solid 2px #e6e9ef;
@@ -27,7 +125,7 @@ html {
     align-items: flex-end;
     width: 200px;
     left: calc(95vw - 200px);
-
+    display: none;
 }
 
 .settings-dropdown {
@@ -40,23 +138,24 @@ html {
     justify-content: flex-start;
     flex-direction: column;
 }
+#settings-click{
+    padding: 0px;
+}
+#theme-link{
+    animation: 1s ease-out 0s 1 slideInFromRight;
+    padding-right: 15px;
+}
 
 .theme-icon {
     padding: 10px;
     height: 32px !important;
     width: 32px !important;
     font-size: 18pt;
-    background: #08246b;
+    background: var(--default-color);
     transition: background 1s;
-    color: white;
+    color: var(--default-tertiary-color);
     text-decoration: none;
 }
-
-.settings {
-    display: none;
-}
-
-
 .theme-entry {
     display: flex;
     align-items: center;
@@ -94,13 +193,9 @@ html {
     background: -webkit-linear-gradient(left, black, #15191d);
 }
 
-
-
-
-
-
 h1 {
     font-size: 60pt;
+    animation: 1s ease-out 0s 1 fade;
 }
 
 body {
@@ -108,7 +203,7 @@ body {
     font-family: "Pixelated MS Sans Serif", Arial;
     margin: 0;
     padding: 0;
-    background-color: #08246b;
+    background-color: var(--default-color);
     transition: background 1s;
     overflow-x: hidden;
 
@@ -146,19 +241,23 @@ nav ul {
 }
 
 .nav-link {
+    animation: 2.5s linear 0s 1 fadeNav;
     margin-top: 10px;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
     align-items: center;
 }
+.nav-link:hover{
+    cursor: pointer
+}
 
 a:hover {
-    color: Yellow;
+    color: var(--default-highlight-color);
 }
 
 a {
-    color: whitesmoke;
+    color: var(--default-tertiary-color);
     text-decoration: none !important;
 }
 
@@ -179,8 +278,8 @@ li {
 #sum {
     width: 300px;
     height: auto fit-content;
-    background-color: #c0c0c0;
-    color: black;
+    background-color: var(--default-secondary-color);
+    color: var(--default-font-color);
     border: solid 2px #e6e9ef;
     border-right: solid 2px black;
     border-bottom: solid 2px black;
@@ -189,7 +288,7 @@ li {
 }
 
 .card-section {
-    background-color: #c0c0c0;
+    background-color: var(--default-secondary-color);
     border: solid 2px #e6e9ef;
     border-right: solid 2px black;
     border-bottom: solid 2px black;
@@ -200,8 +299,8 @@ li {
 
 .topic-header {
     padding: 0vh 2vw;
-    background: -webkit-linear-gradient(left, #08246b, #a5cef7);
-    color: #e6e9ef;
+    background: var(--default-gradient);
+    color: var(--default-tertiary-color);
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -218,7 +317,7 @@ li {
 }
 
 .card {
-    background-color: white;
+    background-color: var(--default-tertiary-color);
     width: 85%;
     height: auto fit-content;
     margin: 10px;
@@ -229,11 +328,12 @@ li {
     border: solid 2px black;
     border-right: solid 2px #e6e9ef;
     border-bottom: solid 2px #e6e9ef;
+    color: var(--default-font-color);
 }
 
 .card-header {
-    background-color: #08246b;
-    color: white;
+    background-color: var(--default-color);
+    color: var(--default-tertiary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,12 +350,12 @@ li {
 }
 
 a i {
-    color: black;
+    color: var(--default-font-color);
     text-decoration: underline;
 }
 
 a i:hover {
-    color: #08246b;
+    color: var(--default-secondary-highlight-color)
 }
 
 
@@ -267,7 +367,7 @@ footer {
 }
 
 footer h2 {
-    color: white;
+    color: var(--default-tertiary-color);
 }
 
 footer ul {
@@ -332,11 +432,6 @@ footer ul {
     color: black;
     border-right-color: white;
     border-bottom-color: white;
-}
-
-.eco-info {
-    /* background-color: #15191d; */
-
 }
 
 .eco-section {
