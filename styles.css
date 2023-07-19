@@ -110,7 +110,6 @@ html {
 
 
 }
-
 .settings {
     /* display: none; */
     height: auto fit-content;
@@ -220,8 +219,8 @@ main {
 
 nav {
     display: flex;
-    justify-content:space-between;
     align-items: left;
+    justify-content: space-between;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
@@ -230,17 +229,20 @@ nav {
 
 nav ul {
     display: flex;
+    align-items: center;
     list-style-type: none;
     width: 100vw;
     background-color: #c0c0c0;
     padding: 0;
-    height: 48px;
+    height: 37px;
 
 }
 
 .nav-icon,
 .theme-icon {
     margin-right: 5px;
+    width: 24px;
+    height: 24px;
 }
 
 .nav-link {
@@ -269,7 +271,8 @@ a {
 li {
     display: flex;
     padding-right: 10px;
-    height: 48px;
+    margin-left: 5px;
+    height: 80%;
     justify-content: center;
     border: solid 2px #e6e9ef;
     border-right: solid 2px black;

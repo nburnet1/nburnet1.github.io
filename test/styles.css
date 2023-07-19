@@ -1,0 +1,220 @@
+:root{
+    --background-color: #008080;
+    --icon-size: 24px;
+    --button-size: 16px;
+    --taskbar-background: #c0c0c0;
+    --window-background: #c0c0c0; 
+    --card-background: #c0c0c0; 
+    --content-background: white;
+    --button-background: #c0c0c0;
+    --title-color: white;
+    --title-background: #000080;
+    --border-not-selected-color: #dfdfdf;
+    --border-selected-color: #7f7f7f;
+    --border-wrap-non-selected-color: white;
+    --border-wrap-selected-color: black;
+    
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+}
+
+
+html{
+    font-family: "Pixelated MS Sans Serif", Arial;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    width:100vw;
+    height:100vh;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-size: auto fit-content;
+    padding:0;
+    margin: 0;
+    background-color: var(--background-color);
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    width:100vw;
+    height:100vh;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width:100%
+}
+.taskbar{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 1px var(--border-not-selected-color);
+    border-bottom: solid 1px var(--border-not-selected-color);
+    width: 100vw;
+    height: 29px;
+    background-color: var(--taskbar-background);
+}
+.taskbar-list{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+}
+.tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+
+}
+.tab-link{
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--button-background);
+}
+.tab-icon{
+    height: var(--icon-size);
+    width: var(--icon-size);
+    padding-right: 5px;
+}
+.title{
+    
+    border: solid 1px var(--border-not-selected-color);
+    display: flex;
+    height: 25px;
+    width: calc(100% - 4px);
+    margin-top: 2px;
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--title-color);
+    background-color: var(--title-background);
+}
+.title-name{
+    padding: 4px;
+}
+.title-opt-list{
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+
+}
+.title-opt{
+    padding-right: 2px;
+}
+.title-img{
+    width: 8px !important;
+    height: 7px !important;
+}
+.title-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:var(--button-size);
+    height: var(--button-size);
+    background-color: var(--button-background);
+ }
+
+
+.negative-window-space{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    /* border: solid 1px black; */
+}
+.window{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--taskbar-background);
+    border: solid 1px var(--border-not-selected-color);
+    border-right: solid 1px var(--border-selected-color);
+    border-bottom: solid 1px var(--border-selected-color);
+
+    width: 85%;
+    height: 85%;
+}
+.sub-window{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.card-wrap{
+    width:96%;
+    height:96%;
+    border: solid 1px var(--border-wrap-non-selected-color);
+    border-right: solid 1px var(--border-wrap-selected-color);
+    border-bottom: solid 1px var(--border-wrap-selected-color);
+    display: flex;
+
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px var(--border-not-selected-color);
+    border-bottom: solid 1px var(--border-selected-color);
+    border-right: solid 1px var(--border-selected-color);
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    background-color: var(--card-background);
+}
+.content{
+    border: solid 1px var(--border-wrap-selected-color);
+    border-bottom: solid 1px var(--border-not-selected-color);
+    border-right: solid 1px var(--border-not-selected-color);
+    width: 95%;
+    height: 95%;
+    background-color: var(--content-background);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+
+}
+.typer{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding-right: 10px;
+
+}
+#name{
+    
+    height: 60pt;
+    font-size: 60pt;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .05em solid black; /* The typwriter cursor */
+    white-space: nowrap; /*Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+    typing 1.75s steps(15, end),
+    blink-caret 1s step-end 5;
+} 
+
+
+
