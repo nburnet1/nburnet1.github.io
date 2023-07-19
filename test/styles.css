@@ -2,6 +2,7 @@
     --background-color: #008080;
     --icon-size: 24px;
     --button-size: 16px;
+    --font-size: 12px;
     --taskbar-background: #c0c0c0;
     --window-background: #c0c0c0; 
     --card-background: #c0c0c0; 
@@ -23,14 +24,15 @@
   
   /* The typewriter cursor effect */
   @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: black; }
+    from, to { border-color: black; }
+    50% { border-color: transparent }
 }
+
 
 
 html{
     font-family: "Pixelated MS Sans Serif", Arial;
-    font-size: 12px;
+    font-size: var(--font-size);
     padding: 0;
     margin: 0;
     width:100vw;
@@ -86,6 +88,7 @@ main{
 }
 .tab-link{
     padding-right: 5px;
+    font-size: var(--font-size);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,7 +156,7 @@ main{
     border-right: solid 1px var(--border-selected-color);
     border-bottom: solid 1px var(--border-selected-color);
 
-    width: 85%;
+    width: 90%;
     height: 85%;
 }
 .sub-window{
@@ -193,6 +196,7 @@ main{
     display: flex;
     justify-content: center; 
     align-items: center; 
+    overflow-y: auto;
 
 
 }
@@ -205,10 +209,9 @@ main{
 }
 #name{
     
-    height: 60pt;
     font-size: 60pt;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .05em solid black; /* The typwriter cursor */
+    border-right: .05em solid transparent; /* The typwriter cursor */
     white-space: nowrap; /*Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     animation: 
@@ -216,5 +219,30 @@ main{
     blink-caret 1s step-end 5;
 } 
 
+#about{
+    --view-width: 15vw;
+    --view-height: 4vh;
+    position: absolute;
+    width: calc(100% - var(--view-width));
+    height: calc(100% - var(--view-height));
+    left: var(--view-width);
+    top: var(--view-height);
+}
+#projects{
+    --view-width: -4vw;
+    --view-height: 15vh;
+    position: absolute;
+    width: calc(95% - var(--view-width));
+    height: calc(100% - var(--view-height));
+    left: var(--view-width);
+    top: var(--view-height);
+}
 
+
+
+@media (max-width: 750px){
+    #name{
+        font-size:32pt;
+    }
+}
 
