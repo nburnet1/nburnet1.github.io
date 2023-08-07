@@ -1,0 +1,135 @@
+{
+  "Education": [{
+    "University": "University of North Carolina at Asheville",
+    "Graduation": "Expected December 2023",
+    "Degree": "Bachelor’s in Computer Science",
+    "GPA": "3.78"
+  },
+    {
+      "University": "CodePath",
+      "Graduation": "Graduated May 2022",
+      "Degree": "Cybersecurity (Honors)",
+      "GPA": ""
+    }
+  ],
+  "Work Experience": [
+    {
+      "Company": "Sierra Nevada Brewing Company",
+      "Dates": "April 2023 - Present",
+      "Position": "Software Developer Intern",
+      "Responsibilities": [
+        "Developed Java Swing monoliths, contributing to the enhancement of user interfaces",
+        "Utilized T-SQL for various tasks, ensuring efficient database operations",
+        "Implemented back-end functionality using Python, enhancing the performance of server-side calls"
+      ]
+    },
+    {
+      "Company": "House of Brandstracts",
+      "Dates": "January 2022 - May 2022",
+      "Position": "Software Developer Volunteer",
+      "Responsibilities": [
+        "Led the development of a Python monolith for linear optimization, streamlining business processes.",
+        "Established a robust DevOps environment, enabling smooth integration and deployment.",
+        "Conducted weekly consultations with stakeholders to identify and meet consumer needs effectively."
+      ]
+    },
+    {
+      "Company": "Microtech Knives",
+      "Dates": "December 2021 - Present",
+      "Position": "Network Technician",
+      "Responsibilities": [
+        "Created dynamic internal websites using React, improving user experience and accessibility.",
+        "Developed Python and BASH automation scripts, optimizing routine tasks.",
+        "Responsible for maintaining SQL databases, ensuring data integrity and availability."
+      ]
+    }
+  ],
+  "Projects": [
+    {
+      "Name": {
+        "title": "TaskWave",
+        "link": "https://github.com/nburnet1/taskwave"
+      },
+      "Date": "July 2023",
+      "Description": "A Project Management Application built with React and Bootstrap.",
+      "Features": [
+        "Implementing a RESTful API using Node.js and Express, enabling seamless data exchange.",
+        "Utilizing Redux for state management and Firebase for data synchronization"
+      ],
+      "Active": true
+    },
+    {
+      "Name": {
+        "title": "Photo-App",
+        "link": "https://github.com/nburnet1/photo-app"
+      },
+      "Date": "January 2023",
+      "Description": "An alternative photo sharing application built in React.",
+      "Features": [
+        "Built a RESTful API using Flask and Python with full CRUD capabilities.",
+        "Uses PostgreSQL to ensure seamless and efficient data management."
+      ],
+      "Active": false
+    },
+    {
+      "Name": {
+        "title": "Pyile",
+        "link": "https://github.com/nburnet1/pyile"
+      },
+      "Date": "June 2022",
+      "Description": "Python monolith enabling secure and private messaging via P2P.",
+      "Features": [
+        "Created Pyile protocol supporting authentication and messaging, ensuring data privacy.",
+        "Implemented robust security measures to protect user communications and integrity."
+      ],
+      "Active": true
+    },
+    {
+      "Name": {
+        "title": "Management System for UNCA",
+        "link": ""
+      },
+      "Date": "January 2023",
+      "Description": "Monolithic application for managing student, faculty, and building data.",
+      "Features": [
+        "Implemented automated tests within the CI/CD pipeline to ensure robust and reliable deployments.",
+        "Adopted Agile methodologies to enhance collaboration, adaptability, and project delivery efficiency.",
+        "Leveraged Java, MySQL, Spring MVC, and JUnit to develop a performant and well-tested application."
+      ],
+      "Active": false
+    },
+    {
+      "Name": {
+        "title": "Pytamate",
+        "link": "https://github.com/nburnet1/pytamate"
+      },
+      "Date": "Febuary 2022",
+      "Description": "Application used for managing Window servers and workstations.",
+      "Features": [
+        "Application developed using the LAMP stack",
+        "Utilized Python for domain logic",
+        "Created deployable agents using Python,BASH, and GPO"
+      ],
+      "Active": false
+    },
+    {
+      "Name": {
+        "title": "Kattis Crawler",
+        "link": ""
+      },
+      "Date": "October 2021",
+      "Description": "Web crawler that scrapes Kattis and returns if the solution is correct.",
+      "Features": [
+        "Developed intuitive Command Line Interface using Python.",
+        "Utilized Selenium to automate web scraping."
+
+      ],
+      "Active": false
+    }
+  ],
+  "skills": {
+    "Languages": ["JavaScript", "TypeScript", "Python", "HTML", "Shell",  "Java", "CSS", "SQL"],
+    "Frameworks/Libraries": ["Material UI", "Bootstrap", "Express", "Node.js","Redux", "React", "Swing","Flask"],
+    "Data/Tools": ["PostgreSQL","MongoDB", "Bitbucket", "Firebase","Docker", "GitHub", "Jira", "Git" ]
+  }
+}
