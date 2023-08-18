@@ -13,7 +13,7 @@ function Home() {
     return (
         <>
             <Paper elevation={0}>
-                <ChangeHistoryIcon id={"triangle"}/>
+                <ChangeHistoryIcon color={"primary"} id={"triangle"}/>
                 <center>
                     <h1 id={"name"}>
                         Noah<br/>Burnette

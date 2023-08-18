@@ -45,12 +45,10 @@ function Projects(props: ProjectsProps) {
         <>
             <Container maxWidth="md" sx={{padding: '32px 10px 96px 10px'}}>
                 <Grid sx={{paddingBottom: '10px'}}>
-                    <Typography variant="h5">Active Projects<Divider/></Typography>
+                    <Typography variant="h5">Projects<Divider/></Typography>
                     {props.data['Projects'].map((data: any) => (
                         <>{listProjects(data, true)}</>
                     ))}
-                    <br/>
-                    <Typography variant="h5">Past Projects <Divider/></Typography>
                     {props.data['Projects'].map((data: any) => (
                         <>{listProjects(data, false)}</>
                     ))}

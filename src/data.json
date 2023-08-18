@@ -1,6 +1,6 @@
 {
   "Education": [{
-    "University": "University of North Carolina at Asheville",
+    "University": "University of North Carolina Asheville",
     "Graduation": "Expected December 2023",
     "Degree": "Bachelor’s in Computer Science",
     "GPA": "3.78"
@@ -18,9 +18,9 @@
       "Dates": "April 2023 - Present",
       "Position": "Software Developer Intern",
       "Responsibilities": [
-        "Developed Java Swing monoliths, contributing to the enhancement of user interfaces",
-        "Utilized T-SQL for various tasks, ensuring efficient database operations",
-        "Implemented back-end functionality using Python, enhancing the performance of server-side calls"
+        "Developed Java Swing monoliths, contributing to the enhancement of user interfaces.",
+        "Utilized T-SQL for various tasks, ensuring efficient database operations.",
+        "Implemented back-end functionality using Python, enhancing the performance of server-side calls."
       ]
     },
     {
@@ -106,9 +106,9 @@
       "Date": "Febuary 2022",
       "Description": "Application used for managing Window servers and workstations.",
       "Features": [
-        "Application developed using the LAMP stack",
-        "Utilized Python for domain logic",
-        "Created deployable agents using Python,BASH, and GPO"
+        "Application developed using the LAMP stack.",
+        "Utilized Python for business side logic.",
+        "Created deployable agents using Python,BASH, and GPO."
       ],
       "Active": false
     },

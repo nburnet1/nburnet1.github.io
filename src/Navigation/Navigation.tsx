@@ -19,7 +19,11 @@ import {Link} from 'react-router-dom';
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Projects', 'Resume', 'Contact'];
 
-export default function DrawerAppBar() {
+interface NavigationProps {
+    location: any;
+}
+
+export default function Navigation(props: NavigationProps) {
 
     const [mobileOpen, setMobileOpen] = React.useState(false);
     const [openDialog, setOpenDialog] = React.useState(false);
@@ -52,12 +56,19 @@ export default function DrawerAppBar() {
             <List>
                 {navItems.map((item) => (
                     <ListItem key={item} disablePadding>
-                        <ListItemButton sx={{textAlign: 'center'}}>
+                        <ListItemButton
+                            sx={{
+                                textAlign: 'center',
+                                backgroundColor: props.location.pathname == ("/" + item.toLowerCase()) ? "#507173" : "inherit",
+                            }}>
                             <Linkmui component={Link} onClick={() => {
                                 if (item === "Resume") {
                                     handleOpenDialog();
                                 }
-                            }} to={"/" + item.toLowerCase()} color="inherit" underline="hover">
+                            }} to={"/" + item.toLowerCase()}
+                                     underline="hover"
+                                     sx={{color:"#e0dac9"}}
+                            >
                                 {item}
                             </Linkmui>
                         </ListItemButton>
@@ -94,9 +105,17 @@ export default function DrawerAppBar() {
                     </Typography>
                     <Box sx={{display: {xs: 'none', sm: 'block'}}}>
                         {navItems.map((item) => (
-                            <Button key={item} sx={{color: '#fff'}}>
-                                <Linkmui component={Link} to={"/" + item.toLowerCase()} color="inherit"
-                                         underline="hover">
+                            <Button key={item}
+                                    tabIndex={-1}
+                                    sx={{
+                                        color: '#e0dac9',
+                                        border: props.location.pathname == ("/" + item.toLowerCase()) ? "2px solid #507173" : "inherit",
+                                    }}>
+                                <Linkmui component={Link} to={"/" + item.toLowerCase()}
+                                         color={"inherit"}
+                                         underline="hover"
+                                         sx={{color:"inherit"}}>
+
                                     {item}
                                 </Linkmui>
                             </Button>

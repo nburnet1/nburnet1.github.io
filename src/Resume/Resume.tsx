@@ -10,7 +10,7 @@ function Resume() {
                 <Tooltip title="Download Resume">
                     <IconButton>
                         <Link href={"../Noah_Burnette_Resume_2023.pdf"} color={"inherit"} download>
-                            <Download/>
+                            <Download sx={{color: "text.primary"}}/>
                         </Link>
                     </IconButton>
                 </Tooltip>
