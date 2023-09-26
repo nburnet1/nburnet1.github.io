@@ -18,19 +18,9 @@
       "Dates": "April 2023 - Present",
       "Position": "Software Developer Intern",
       "Responsibilities": [
-        "Developed Java Swing monoliths, contributing to the enhancement of user interfaces.",
+        "Developed Ignition monoliths using various libraries, contributing to the overall enhancement of the application.",
         "Utilized T-SQL for various tasks, ensuring efficient database operations.",
         "Implemented back-end functionality using Python, enhancing the performance of server-side calls."
-      ]
-    },
-    {
-      "Company": "House of Brandstracts",
-      "Dates": "January 2022 - May 2022",
-      "Position": "Software Developer Volunteer",
-      "Responsibilities": [
-        "Led the development of a Python monolith for linear optimization, streamlining business processes.",
-        "Established a robust DevOps environment, enabling smooth integration and deployment.",
-        "Conducted weekly consultations with stakeholders to identify and meet consumer needs effectively."
       ]
     },
     {
@@ -38,9 +28,10 @@
       "Dates": "December 2021 - Present",
       "Position": "Network Technician",
       "Responsibilities": [
-        "Created dynamic internal websites using React, improving user experience and accessibility.",
-        "Developed Python and BASH automation scripts, optimizing routine tasks.",
-        "Responsible for maintaining SQL databases, ensuring data integrity and availability."
+        "Performed network analysis.",
+        "Coded automation scripts using Python and BASH.",
+        "Performed system and database administration duties regularly.",
+        "Installed and configured network and server architecture."
       ]
     }
   ],
@@ -95,6 +86,20 @@
         "Implemented automated tests within the CI/CD pipeline to ensure robust and reliable deployments.",
         "Adopted Agile methodologies to enhance collaboration, adaptability, and project delivery efficiency.",
         "Leveraged Java, MySQL, Spring MVC, and JUnit to develop a performant and well-tested application."
+      ],
+      "Active": false
+    },
+    {
+      "Name": {
+        "title": "Linear Optimization Application",
+        "link": ""
+      },
+      "Date": "January 2022",
+      "Description": "Developed for House of BrandStract's sales team",
+      "Features": [
+        "Led the development of a Python monolith for linear optimization, streamlining business processes.",
+        "Established a robust DevOps environment, enabling smooth integration and deployment..",
+        "Conducted weekly consultations with stakeholders to identify and meet consumer needs effectively"
       ],
       "Active": false
     },

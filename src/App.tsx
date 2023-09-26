@@ -10,6 +10,7 @@ import Resume from "./Resume/Resume";
 import Contact from "./Contact/Contact";
 import Navigation from "./Navigation/Navigation"
 import Footer from "./Footer/Footer";
+import FOSS from "./FOSS/FOSS";
 import data from "./data.json";
 
 
@@ -49,6 +50,7 @@ function App() {
                     <Route path="/projects" element={<Projects data={data}/>}/>
                     <Route path="/resume" element={<Resume/>}/>
                     <Route path="/contact" element={<Contact/>}/>
+                    <Route path="/foss" element={<FOSS/>}/>
                 </Routes>
                 {location.pathname == "/" || location.pathname == "/home" || location.pathname == "/contact" ? <></> :
                     <Footer/>}

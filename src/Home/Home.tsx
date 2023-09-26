@@ -1,13 +1,13 @@
 import React from "react";
-import {Paper} from "@mui/material";
+import {Link, Paper} from "@mui/material";
 import ChangeHistoryIcon from "@mui/icons-material/ChangeHistory";
 import HomeNav from "../HomeNav/HomeNav";
 import WordCycler from "../WordCycler/WordCycler";
 
 
 function Home() {
-    const wordList = ["Problem Solver", "Collaborator", "Developer", "Innovator", "Designer", "Engineer", "Teammate", "Creator", "Thinker", "Leader"];
-    const interval = 1250;
+    const wordList = ["FOSS", "Networking", "Problem Solving", "Innovating", "Designing", "Creating"];
+    const interval = 2000;
 
 
     return (
@@ -20,8 +20,9 @@ function Home() {
                     </h1>
                 </center>
                 <HomeNav/>
-                <h3>
-                    <WordCycler words={wordList} interval={interval}/>
+                <h3 className={"home-description"}>
+                     I love  <WordCycler words={wordList} interval={interval}/>
+
                 </h3>
             </Paper>
         </>

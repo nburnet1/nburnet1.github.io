@@ -17,7 +17,7 @@ import {Link} from 'react-router-dom';
 
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Projects', 'Resume', 'Contact'];
+const navItems = ['Home', 'About', 'Projects', 'Resume', 'Contact', 'FOSS'];
 
 interface NavigationProps {
     location: any;
@@ -149,7 +149,7 @@ export default function Navigation(props: NavigationProps) {
                 <DialogActions>
                     <Button onClick={handleCloseDialog}>No Thanks</Button>
                     <Button onClick={handleDownloadResume} color="primary" autoFocus>
-                        <a href={"../Noah_Burnette_Resume_2023.pdf"} download
+                        <a href={"../Noah_Burnette_Resume.pdf"} download
                            style={{color: "inherit", textDecoration: "none"}}>
                             Download
                         </a>
