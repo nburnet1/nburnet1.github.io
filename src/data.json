@@ -18,9 +18,10 @@
       "Dates": "April 2023 - Present",
       "Position": "Software Developer Intern",
       "Responsibilities": [
-        "Developed Ignition monoliths using various libraries, contributing to the overall enhancement of the application.",
+        "Developed modular Ignition SCADA applications",
         "Utilized T-SQL for various tasks, ensuring efficient database operations.",
-        "Implemented back-end functionality using Python, enhancing the performance of server-side calls."
+        "Implemented back-end functionality using Python, enhancing the performance of server-side calls.",
+        "Participated in agile development through Azure DevOps"
       ]
     },
     {
@@ -30,6 +31,7 @@
       "Responsibilities": [
         "Performed network analysis.",
         "Coded automation scripts using Python and BASH.",
+        "Created dynamic internal websites using React, improving user experience and accessibility.",
         "Performed system and database administration duties regularly.",
         "Installed and configured network and server architecture."
       ]
@@ -68,7 +70,7 @@
         "link": "https://github.com/nburnet1/pyile"
       },
       "Date": "June 2022",
-      "Description": "Python monolith enabling secure and private messaging via P2P.",
+      "Description": "Modular Python application enabling secure and private messaging via P2P.",
       "Features": [
         "Created Pyile protocol supporting authentication and messaging, ensuring data privacy.",
         "Implemented robust security measures to protect user communications and integrity."
@@ -113,7 +115,7 @@
       "Features": [
         "Application developed using the LAMP stack.",
         "Utilized Python for business side logic.",
-        "Created deployable agents using Python,BASH, and GPO."
+        "Created deployable agents using Python, BASH, and GPO."
       ],
       "Active": false
     },
@@ -134,7 +136,7 @@
   ],
   "skills": {
     "Languages": ["JavaScript", "TypeScript", "Python", "HTML", "Shell",  "Java", "CSS", "SQL"],
-    "Frameworks/Libraries": ["Material UI", "Bootstrap", "Express", "Node.js","Redux", "React", "Swing","Flask"],
+    "Frameworks/Libraries": ["Material UI", "Bootstrap", "Express", "Node.js","Redux", "React", "Spring","Flask"],
     "Data/Tools": ["PostgreSQL","MongoDB", "Bitbucket", "Firebase","Docker", "GitHub", "Jira", "Git" ]
   }
 }

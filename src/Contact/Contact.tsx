@@ -1,9 +1,9 @@
 import React from "react";
-import {Card, CardActions, CardContent, CardMedia, Chip, Container, List, Typography} from "@mui/material";
+import {Card, CardActions, CardContent, CardMedia, Chip, Container, Typography} from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
-import {ViewKanban, ViewKanbanRounded} from "@mui/icons-material";
+import {ViewKanbanRounded} from "@mui/icons-material";
 
 function Contact() {
     return (

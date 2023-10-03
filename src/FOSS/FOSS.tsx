@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Container, Link, Typography} from "@mui/material";
+import {Card, CardContent, Container, Link, Typography} from "@mui/material";
 import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
 
@@ -37,21 +37,19 @@ function FOSS(){
     return (
         <Container maxWidth="md" sx={{padding: '32px 10px 96px 10px'}}>
             <Grid sx={{paddingBottom: '10px'}}>
-                <Typography variant="h5"><center>Great <Link href={"https://opensource.org/osd/"}>Open Source</Link> Software/Projects.</center></Typography>
+                <Typography variant="h5"><center>Great <Link component={Link} color={"inherit"} href={"https://opensource.org/osd/"}>Open Source</Link> Software/Projects.</center></Typography>
                 <Divider/>
                 {isLoading ? (
                     <p>Loading...</p>
                 ) : (
-                    <Grid item>
+                    <Grid item sx={{padding: "10px 0"}}>
                         {starredRepos.map((repo:Repo) => (
-                            <>
-                            <Grid container justifyContent={"space-between"} key={repo.id}>
-                                <Typography variant="h6"><Link href={repo.html_url}>{repo.name}</Link></Typography>
-                            </Grid>
-                            <Grid item>
+                            <Card sx={{padding: "5px"}}>
+                            <CardContent>
+                                <Typography variant="h6"><Link component={Link} color={"inherit"} href={repo.html_url}>{repo.name}</Link></Typography>
                                <i>{repo.description === null ? "Description not provided" : <>{repo.description}</>}</i>
-                            </Grid>
-                            </>
+                            </CardContent>
+                            </Card>
                         ))}
                     </Grid>
                 )}

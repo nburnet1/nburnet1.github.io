@@ -1,8 +1,7 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import {Container, Typography} from "@mui/material";
+import {Container, Link as MUILink, Typography} from "@mui/material";
 import Divider from "@mui/material/Divider";
-import {Link as MUILink} from "@mui/material";
 import {Link} from "react-router-dom";
 
 

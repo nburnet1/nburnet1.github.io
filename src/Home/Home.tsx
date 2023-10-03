@@ -1,5 +1,5 @@
 import React from "react";
-import {Link, Paper} from "@mui/material";
+import {Paper} from "@mui/material";
 import ChangeHistoryIcon from "@mui/icons-material/ChangeHistory";
 import HomeNav from "../HomeNav/HomeNav";
 import WordCycler from "../WordCycler/WordCycler";
@@ -7,7 +7,7 @@ import WordCycler from "../WordCycler/WordCycler";
 
 function Home() {
     const wordList = ["FOSS", "Networking", "Problem Solving", "Innovating", "Designing", "Creating"];
-    const interval = 2000;
+    const interval = 1750;
 
 
     return (

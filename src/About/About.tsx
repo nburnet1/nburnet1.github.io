@@ -1,6 +1,5 @@
 import React from "react";
-import Paper from "@mui/material/Paper";
-import {Box, Card, CardContent, CardHeader, Container, List, Typography} from "@mui/material";
+import {Box, Container, Typography} from "@mui/material";
 import Divider from "@mui/material/Divider";
 import Grid from '@mui/material/Grid';
 

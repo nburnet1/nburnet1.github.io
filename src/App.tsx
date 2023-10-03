@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './App.css';
-import {Box, createTheme, Paper, ThemeProvider, Typography} from "@mui/material";
+import {createTheme, ThemeProvider} from "@mui/material";
 import {Route, Routes, useLocation} from "react-router-dom";
 import Home from "./Home/Home";
 import Projects from "./Projects/Projects";
@@ -42,7 +42,7 @@ function App() {
     return (
         <>
             <ThemeProvider theme={darkTheme}>
-                {location.pathname == "/" || location.pathname == "/home" ? <></> : <Navigation location={location}/>}
+                {location.pathname === "/" || location.pathname === "/home" ? <></> : <Navigation location={location}/>}
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/home" element={<Home/>}/>
@@ -52,7 +52,7 @@ function App() {
                     <Route path="/contact" element={<Contact/>}/>
                     <Route path="/foss" element={<FOSS/>}/>
                 </Routes>
-                {location.pathname == "/" || location.pathname == "/home" || location.pathname == "/contact" ? <></> :
+                {location.pathname === "/" || location.pathname === "/home" || location.pathname === "/contact" ? <></> :
                     <Footer/>}
             </ThemeProvider>
         </>
