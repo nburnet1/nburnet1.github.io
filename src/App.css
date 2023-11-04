@@ -11,6 +11,7 @@
     background-color: inherit;
     font-size: xxx-large;
 }
+
 .MuiPaper-elevation0{
     display: flex;
     justify-content: center;
@@ -24,7 +25,22 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    border-bottom: 1px solid #4a696b;
+    border-bottom: 1px solid #0066CC;
+}
+.home-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 32px;
+    max-width: 540px;
+}
+.home-paper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 #triangle{
     display: flex;
@@ -38,6 +54,13 @@
 .homeRouterLink{
     color: inherit;
     text-decoration: inherit;
+
+}
+.download{
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    padding: 10px 0;
 
 }
 .page{
@@ -73,6 +96,15 @@
     list-style-type: none;
     padding: 0;
 }
+.footer-svg, .footer-svg-flipped{
+    width: 90%;
+    max-height: 64px;
+    height: 90%;
+}
+.footer-svg-flipped{
+    transform: scaleX(-1);
+
+}
 .contact-logo{
     display: flex;
     justify-content: center;
@@ -89,10 +121,5 @@
     border-radius: 50%;
 }
 
-.contact-button, .contact-chip{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 

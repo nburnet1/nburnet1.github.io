@@ -1,7 +1,9 @@
 import React from "react";
-import {Box, Container, Typography} from "@mui/material";
+import {Box, Container, Link, Typography} from "@mui/material";
 import Divider from "@mui/material/Divider";
 import Grid from '@mui/material/Grid';
+import Projects from "../Projects/Projects";
+import {Download} from "@mui/icons-material";
 
 type AboutProps = {
     data: any;
@@ -87,10 +89,17 @@ const listEducation = (data: any) => {
 function About(props: AboutProps) {
     return (
         <>
-            <Container maxWidth="md" sx={{padding: '32px 10px 96px 10px'}}>
+            <Container maxWidth="md" sx={{padding: '22px 15px 96px 15px'}}>
+
+                        <Link className={"download"} href={"../Noah_Burnette_Resume.pdf"} color={"inherit"} download>
+                            <Download sx={{color: "text.primary"}}/>
+                            Download
+                        </Link>
+
+
                 <Grid sx={{paddingBottom: '10px'}}>
                     <Typography variant="h5">Education</Typography>
-                    <Divider/>
+                    <Divider sx={{margin: "5px 0px"}}/>
 
                     {props.data['Education'].map((data: any, index: number) => (
                         <>{listEducation(data)}</>
@@ -101,7 +110,7 @@ function About(props: AboutProps) {
                     <Typography variant="h5">
                         Work Experience
                     </Typography>
-                    <Divider/>
+                    <Divider sx={{margin: "5px 0px"}}/>
 
                     {props.data['Work Experience'].map((experience: any, index: number) => (
                         <>
@@ -109,8 +118,10 @@ function About(props: AboutProps) {
                         </>
                     ))}
                 </Grid>
-                <br/>
-                <Divider/>
+
+                <Projects data={props.data}/>
+
+                <Divider sx={{margin: "5px 0px"}}/>
                 <Box sx={{flexGrow: 1}}>
                     <Grid container spacing={2} justifyContent={"space-evenly"}>
                         {listSkills("Languages", props.data)}

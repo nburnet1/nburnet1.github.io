@@ -10,16 +10,6 @@ function HomeNav() {
         <>
             <MenuList id={"home-menu"}>
                 <MenuItem>
-                    <Linkmui component={Link} to="/about" color="inherit" underline="hover">
-                        About
-                    </Linkmui>
-                </MenuItem>
-                <MenuItem>
-                    <Linkmui component={Link} to="/projects" color="inherit" underline="hover">
-                        Projects
-                    </Linkmui>
-                </MenuItem>
-                <MenuItem>
                     <Linkmui component={Link} to="/resume" color="inherit" underline="hover">
                         Resume
                     </Linkmui>
@@ -27,6 +17,11 @@ function HomeNav() {
                 <MenuItem>
                     <Linkmui component={Link} to="/contact" color="inherit" underline="hover">
                         Contact
+                    </Linkmui>
+                </MenuItem>
+                <MenuItem>
+                    <Linkmui component={Link} to="/foss" color="inherit" underline="hover">
+                        FOSS
                     </Linkmui>
                 </MenuItem>
             </MenuList>

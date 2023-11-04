@@ -1,5 +1,5 @@
 import React from "react";
-import {Card, CardActions, CardContent, CardMedia, Chip, Container, Typography} from "@mui/material";
+import {Card, CardActions, CardContent, CardMedia, Chip, Container, Paper, Typography} from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
@@ -8,8 +8,8 @@ import {ViewKanbanRounded} from "@mui/icons-material";
 function Contact() {
     return (
         <>
+            <Paper elevation={0} sx={{height: "calc(100vh - 64px)"}}>
             <Container maxWidth="md" sx={{
-                padding: '32px 10px 96px 10px',
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center"
@@ -19,7 +19,7 @@ function Contact() {
                         <CardMedia
                             className={"contact-img"}
                             sx={{height: 250, width: 250}}
-                            image="../pfp.JPG"
+                            image="../me.jpg"
                             title="me"
                         />
                     </div>
@@ -32,12 +32,13 @@ function Contact() {
                         </Typography>
                     </CardContent>
                     <CardActions>
+
                         <Chip
                             className={"contact-chip"}
                             size={"small"}
                             icon={<GitHubIcon/>}
                             label="Github"
-                            component="a"
+                            component={"a"}
                             href="https://github.com/nburnet1"
                             variant={"outlined"}
                             clickable
@@ -77,8 +78,10 @@ function Contact() {
                             sx={{color:"text.primary"}}
                         />
                     </CardActions>
+
                 </Card>
             </Container>
+            </Paper>
         </>
     );
 }

@@ -12,12 +12,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import {Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Link as Linkmui} from '@mui/material';
+import {Link as Linkmui} from '@mui/material';
 import {Link} from 'react-router-dom';
 
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Projects', 'Resume', 'Contact', 'FOSS'];
+const navItems = ['Resume', 'Contact', 'FOSS'];
 
 interface NavigationProps {
     location: any;
@@ -26,23 +26,8 @@ interface NavigationProps {
 export default function Navigation(props: NavigationProps) {
 
     const [mobileOpen, setMobileOpen] = React.useState(false);
-    const [openDialog, setOpenDialog] = React.useState(false);
-
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
-    };
-
-    const handleOpenDialog = () => {
-        setOpenDialog(true);
-    };
-
-    const handleCloseDialog = () => {
-        setOpenDialog(false);
-    };
-
-    const handleDownloadResume = () => {
-
-        handleCloseDialog();
     };
 
     const drawer = (
@@ -59,15 +44,12 @@ export default function Navigation(props: NavigationProps) {
                         <ListItemButton
                             sx={{
                                 textAlign: 'center',
-                                backgroundColor: props.location.pathname == ("/" + item.toLowerCase()) ? "#507173" : "inherit",
+                                backgroundColor: props.location.pathname == ("/" + item.toLowerCase()) ? "#0066CC" : "inherit",
                             }}>
                             <Linkmui component={Link} onClick={() => {
-                                if (item === "Resume") {
-                                    handleOpenDialog();
-                                }
                             }} to={"/" + item.toLowerCase()}
                                      underline="hover"
-                                     sx={{color:"#e0dac9"}}
+                                     sx={{color:"#333333"}}
                             >
                                 {item}
                             </Linkmui>
@@ -108,8 +90,8 @@ export default function Navigation(props: NavigationProps) {
                             <Button key={item}
                                     tabIndex={-1}
                                     sx={{
-                                        color: '#e0dac9',
-                                        border: props.location.pathname == ("/" + item.toLowerCase()) ? "2px solid #507173" : "inherit",
+                                        color: '#F0F0F0',
+                                        border: props.location.pathname == ("/" + item.toLowerCase()) ? "2px solid #333333" : "inherit",
                                     }}>
                                 <Linkmui component={Link} to={"/" + item.toLowerCase()}
                                          color={"inherit"}
@@ -139,24 +121,6 @@ export default function Navigation(props: NavigationProps) {
                     {drawer}
                 </Drawer>
             </Box>
-            <Dialog open={openDialog} onClose={handleCloseDialog}>
-                <DialogTitle>Download Resume</DialogTitle>
-                <DialogContent>
-                    <DialogContentText>
-                        Would you like to download my resume?
-                    </DialogContentText>
-                </DialogContent>
-                <DialogActions>
-                    <Button onClick={handleCloseDialog}>No Thanks</Button>
-                    <Button onClick={handleDownloadResume} color="primary" autoFocus>
-                        <a href={"../Noah_Burnette_Resume.pdf"} download
-                           style={{color: "inherit", textDecoration: "none"}}>
-                            Download
-                        </a>
-
-                    </Button>
-                </DialogActions>
-            </Dialog>
         </Box>
     );
 }

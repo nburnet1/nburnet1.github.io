@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Card, CardContent, Container, Link, Typography} from "@mui/material";
+import {Card, CardContent, CircularProgress, Container, Link, Paper, Typography} from "@mui/material";
 import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
 
@@ -38,13 +38,19 @@ function FOSS(){
         <Container maxWidth="md" sx={{padding: '32px 10px 96px 10px'}}>
             <Grid sx={{paddingBottom: '10px'}}>
                 <Typography variant="h5"><center>Great <Link component={Link} color={"inherit"} href={"https://opensource.org/osd/"}>Open Source</Link> Software/Projects.</center></Typography>
-                <Divider/>
+                <Divider sx={{margin: "5px 0px"}}/>
+                <Paper elevation={5} sx={{padding: "15px", margin: "5px"}}>
+                    <p>
+                        FOSS plays a vital role in the developer community by supporting collaboration, transparency, and innovation.
+                        By featuring these projects, I hope to underscore my commitment to these values and advocate for the accessibility and common good that FOSS brings to society.
+                    </p>
+                </Paper>
                 {isLoading ? (
-                    <p>Loading...</p>
+                    <CircularProgress sx={{padding: "10px"}} />
                 ) : (
                     <Grid item sx={{padding: "10px 0"}}>
                         {starredRepos.map((repo:Repo) => (
-                            <Card sx={{padding: "5px"}}>
+                            <Card sx={{padding: "5px", margin: "5px"}}>
                             <CardContent>
                                 <Typography variant="h6"><Link component={Link} color={"inherit"} href={repo.html_url}>{repo.name}</Link></Typography>
                                <i>{repo.description === null ? "Description not provided" : <>{repo.description}</>}</i>

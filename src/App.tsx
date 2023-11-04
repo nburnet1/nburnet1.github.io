@@ -6,7 +6,6 @@ import {Route, Routes, useLocation} from "react-router-dom";
 import Home from "./Home/Home";
 import Projects from "./Projects/Projects";
 import About from "./About/About";
-import Resume from "./Resume/Resume";
 import Contact from "./Contact/Contact";
 import Navigation from "./Navigation/Navigation"
 import Footer from "./Footer/Footer";
@@ -18,24 +17,20 @@ function App() {
     const location = useLocation();
     const darkTheme = createTheme({
         palette: {
-            mode: 'dark',
+            mode: 'light',
             background:{
-                default: "#070707",
-                paper: '#070707'
-            //    #06070E
-            //    #201A23
-            //    #0F0A0A
-            //    #001021
+                default: "#e0e0e0",
+                paper: '#e0e0e0'
             },
             primary: {
-                main: '#4a696b',
+                main: '#0066CC',
             },
             secondary: {
                 main: '#708323',
             },
-            divider: '#4a696b',
+            divider: '#0066CC',
             text: {
-                primary: '#e0dac9',
+                primary: '#333333',
             },
         },
     });
@@ -45,14 +40,12 @@ function App() {
                 {location.pathname === "/" || location.pathname === "/home" ? <></> : <Navigation location={location}/>}
                 <Routes>
                     <Route path="/" element={<Home/>}/>
-                    <Route path="/home" element={<Home/>}/>
-                    <Route path="/about" element={<About data={data}/>}/>
                     <Route path="/projects" element={<Projects data={data}/>}/>
-                    <Route path="/resume" element={<Resume/>}/>
+                    <Route path="/resume" element={<About data={data}/>}/>
                     <Route path="/contact" element={<Contact/>}/>
                     <Route path="/foss" element={<FOSS/>}/>
                 </Routes>
-                {location.pathname === "/" || location.pathname === "/home" || location.pathname === "/contact" ? <></> :
+                {location.pathname === "/" || location.pathname === "/contact" ? <></> :
                     <Footer/>}
             </ThemeProvider>
         </>

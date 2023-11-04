@@ -1,6 +1,6 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import {Container, Link as MUILink, Typography} from "@mui/material";
+import {Link as MUILink, Typography} from "@mui/material";
 import Divider from "@mui/material/Divider";
 import {Link} from "react-router-dom";
 
@@ -42,9 +42,9 @@ function Projects(props: ProjectsProps) {
     }
     return (
         <>
-            <Container maxWidth="md" sx={{padding: '32px 10px 96px 10px'}}>
+
                 <Grid sx={{paddingBottom: '10px'}}>
-                    <Typography variant="h5">Projects<Divider/></Typography>
+                    <Typography variant="h5">Projects<Divider sx={{margin: "5px 0px"}}/></Typography>
                     {props.data['Projects'].map((data: any) => (
                         <>{listProjects(data, true)}</>
                     ))}
@@ -54,7 +54,7 @@ function Projects(props: ProjectsProps) {
 
 
                 </Grid>
-            </Container>
+
         </>
     );
 }
