@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="SVGRoot" version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <path transform="matrix(.09047 0 0 .10314 -11.055 -2.1336)" d="m475.91 330.94-354.62-0.46729 177.72-306.88 88.454 153.67z" fill="#06c"/>
+  <text transform="scale(1.1559 .8651)" x="9.3400822" y="34.597469" fill="#e0e0e0" font-family="Hack" font-size="20.029px" stroke-width=".50073" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="9.3400822" y="34.597469" fill="#e0e0e0" font-family="Hack" font-size="20.029px" stroke-width=".50073" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">N</tspan></text>
+ </g>
+</svg>
