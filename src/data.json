@@ -19,7 +19,7 @@
       "Position": "IT Developer",
       "Responsibilities": [
         "Created web applications using React, improving content management and training.",
-        "Developed Python and BASH automation scripts, optimizing routine tasks.",
+        "Developed Python and Bash automation scripts, optimizing routine tasks.",
         "Implemented Agile methodologies across the entire IT department using Taiga."
       ]
     },
@@ -126,7 +126,7 @@
       "Features": [
         "Application developed using LAMP.",
         "Utilized Python for business side logic.",
-        "Created deployable agents using Python, BASH, and GPO."
+        "Created deployable agents using Python, Bash, and GPO."
       ],
       "Active": false
     },
