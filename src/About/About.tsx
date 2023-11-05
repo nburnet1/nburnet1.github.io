@@ -39,25 +39,41 @@ const listSkills = (title: string, data: any) => {
 }
 
 const listWork = (data: any) => {
-    return (
-        <Grid item>
-            <Typography variant="subtitle1">
-                <Grid container justifyContent={"space-between"}>
-                    <Grid item><b>{data.Company}</b></Grid>
-                    <Grid item>{data.Dates}</Grid>
-                </Grid>
-                <Grid>
-                    <Grid item><i>{data.Position}</i></Grid>
-                </Grid>
-            </Typography>
-            <ul>
-                {data.Responsibilities.map((responsibility: string, idx: number) => (
-                    <li key={idx}>{responsibility}</li>
-                ))}
-            </ul>
-        </Grid>
-    )
 
+        if(data.Company === ""){
+            return(
+            <Grid item>
+                <Typography variant="subtitle1">
+                    <Grid container justifyContent={"space-between"}>
+                        <Grid item><i>{data.Position}</i></Grid>
+                        <Grid item>{data.Dates}</Grid>
+                    </Grid>
+                </Typography>
+                <ul>
+                    {data.Responsibilities.map((responsibility: string, idx: number) => (
+                        <li key={idx}>{responsibility}</li>
+                    ))}
+                </ul>
+            </Grid>)
+
+        }
+        return(
+            <Grid item>
+                <Typography variant="subtitle1">
+                    <Grid>
+                        <Grid item><b>{data.Company}</b></Grid>
+                    </Grid>
+                    <Grid container justifyContent={"space-between"}>
+                        <Grid item><i>{data.Position}</i></Grid>
+                        <Grid item>{data.Dates}</Grid>
+                    </Grid>
+                </Typography>
+                <ul>
+                    {data.Responsibilities.map((responsibility: string, idx: number) => (
+                        <li key={idx}>{responsibility}</li>
+                    ))}
+                </ul>
+            </Grid>)
 }
 
 const listEducation = (data: any) => {

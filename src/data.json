@@ -14,28 +14,39 @@
   ],
   "Work Experience": [
     {
+      "Company": "Microtech Knives",
+      "Dates": "November 2023 - Present",
+      "Position": "IT Developer",
+      "Responsibilities": [
+        "Created web applications using React, improving content management and training.",
+        "Developed Python and BASH automation scripts, optimizing routine tasks.",
+        "Implemented Agile methodologies across the entire IT department using Taiga."
+      ]
+    },
+    {
+      "Company": "",
+      "Dates": "December 2021 - November 2023",
+      "Position": "Network Technician",
+      "Responsibilities": [
+        "Managed and installed Linux infrastructure.",
+        "Created Docker images to facilitate seamless deployment of workspaces.",
+        "Conducted network analysis, uncovering potential security threats.",
+        "Installed and configured Meraki hardware, enhancing network robustness."
+      ]
+    },
+
+    {
       "Company": "Sierra Nevada Brewing Company",
       "Dates": "April 2023 - October 2023",
       "Position": "Software Developer Intern",
       "Responsibilities": [
-        "Developed modular Ignition SCADA applications",
-        "Utilized T-SQL for various tasks, ensuring efficient database operations.",
+        "Developed modular Ignition SCADA applications.",
+        "Employed T-SQL to design stored procedures and views for streamlined database operations.",
         "Implemented back-end functionality using Python, enhancing the performance of server-side calls.",
-        "Participated in agile development through Azure DevOps"
-      ]
-    },
-    {
-      "Company": "Microtech Knives",
-      "Dates": "December 2021 - Present",
-      "Position": "Network Technician",
-      "Responsibilities": [
-        "Performed network analysis.",
-        "Coded automation scripts using Python and BASH.",
-        "Created dynamic internal websites using React, improving user experience and accessibility.",
-        "Performed system and database administration duties regularly.",
-        "Installed and configured network and server architecture."
+        "Led the adoption of Agile practices using Azure DevOps."
       ]
     }
+
   ],
   "Projects": [
     {
@@ -113,7 +124,7 @@
       "Date": "Febuary 2022",
       "Description": "Application used for managing Window servers and workstations.",
       "Features": [
-        "Application developed using the LAMP stack.",
+        "Application developed using LAMP.",
         "Utilized Python for business side logic.",
         "Created deployable agents using Python, BASH, and GPO."
       ],

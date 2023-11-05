@@ -19,7 +19,7 @@ function Home() {
 
                     <Paper className={"home-para"} elevation={1}>
                         <p>
-                            Hey there! Thanks for visiting my website. I am an upcoming Computer Science graduate who loves
+                            Hey there! Thanks for visiting my portfolio. I am an upcoming Computer Science graduate who loves
                             problem solving and coding. I am currently seeking a full-time position in software development.
                             Please see my&nbsp;
                             <Linkmui component={Link} to="/resume" color="inherit">resume</Linkmui>

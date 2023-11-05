@@ -58,7 +58,6 @@
 }
 .download{
     display: flex;
-    justify-content: right;
     flex-direction: row;
     padding: 10px 0;
 

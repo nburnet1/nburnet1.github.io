@@ -1,20 +1,117 @@
 import React from "react";
-import {Card, CardActions, CardContent, CardMedia, Chip, Container, Paper, Typography} from "@mui/material";
+import {Card, CardActions, CardContent, CardMedia, Chip, Container, Paper, TextField, Typography} from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import {ViewKanbanRounded} from "@mui/icons-material";
+import {useForm, ValidationError} from "@formspree/react";
+import Button from "@mui/material/Button";
 
 function Contact() {
+    function ContactForm() {
+        const [state, handleSubmit] = useForm("xknlezvd");
+
+        if (state.succeeded) {
+            return (
+                <Card>
+                    <CardContent>
+                        <Typography variant="h6" align="center">
+                            Thank you! I'll be in touch soon.
+                        </Typography>
+                    </CardContent>
+                </Card>
+
+            );
+        }
+
+        return (
+            <Card>
+                <CardContent>
+                    <Typography variant="h5" gutterBottom>
+                        Contact Form
+                    </Typography>
+                    <form onSubmit={handleSubmit}>
+                        <TextField
+                            label="Full Name"
+                            variant="outlined"
+                            id="full-name"
+                            type="text"
+                            name="name"
+                            size="small"
+                            fullWidth
+                            sx={{ marginBottom: 2 }}
+                        />
+                        <TextField
+                            label="Email"
+                            variant="outlined"
+                            id="email"
+                            type="email"
+                            name="email"
+                            size="small"
+                            fullWidth
+                            sx={{ marginBottom: 2 }}
+                        />
+                        <ValidationError
+                            prefix="Email"
+                            field="email"
+                            errors={state.errors}
+
+                        />
+                        <TextField
+                            label="Phone Number (Optional)"
+                            variant="outlined"
+                            type="telephone"
+                            name="telephone"
+                            id="telephone"
+                            size="small"
+                            fullWidth
+                            sx={{ marginBottom: 2 }}
+                        />
+                        <ValidationError
+                            prefix="Email"
+                            field="email"
+                            errors={state.errors}
+
+                        />
+                        <TextField
+                            id="message"
+                            name="message"
+                            label="Message"
+                            multiline
+                            variant="outlined"
+                            fullWidth
+                            sx={{ marginBottom: 2 }}
+                        />
+                        <ValidationError
+                            prefix="Message"
+                            field="message"
+                            errors={state.errors}
+
+                        />
+                        <Button
+                            type="submit"
+                            variant="contained"
+                            color="primary"
+                            fullWidth
+                            disabled={state.submitting}
+                        >
+                            Submit
+                        </Button>
+                    </form>
+                </CardContent>
+            </Card>
+        );
+    }
     return (
         <>
-            <Paper elevation={0} sx={{height: "calc(100vh - 64px)"}}>
+            <Paper elevation={0} sx={{height: "100%", padding:"20px 0"}}>
             <Container maxWidth="md" sx={{
+
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center"
             }}>
-                <Card sx={{maxWidth: 400}} variant={"outlined"}>
+                <Card  sx={{maxWidth: 400}} variant={"outlined"}>
                     <div className={"contact-img-div"}>
                         <CardMedia
                             className={"contact-img"}
@@ -28,7 +125,7 @@ function Contact() {
                             Noah Burnette
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            Feel free to reach out to me on any of the following platforms!
+                            Feel free to reach out to me on any of the following platforms or use the contact form below!
                         </Typography>
                     </CardContent>
                     <CardActions>
@@ -78,7 +175,7 @@ function Contact() {
                             sx={{color:"text.primary"}}
                         />
                     </CardActions>
-
+                     <ContactForm />
                 </Card>
             </Container>
             </Paper>

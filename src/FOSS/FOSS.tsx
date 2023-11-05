@@ -41,8 +41,8 @@ function FOSS(){
                 <Divider sx={{margin: "5px 0px"}}/>
                 <Paper elevation={5} sx={{padding: "15px", margin: "5px"}}>
                     <p>
-                        FOSS plays a vital role in the developer community by supporting collaboration, transparency, and innovation.
-                        By featuring these projects, I hope to underscore my commitment to these values and advocate for the accessibility and common good that FOSS brings to society.
+                        Free and Open Source Software (FOSS) is the cornerstone of collaboration, transparency, and innovation in the developer community.
+                        By featuring these projects, I hope to underscore my commitment to these values and advocate for the accessibility and the common good that FOSS brings to society.
                     </p>
                 </Paper>
                 {isLoading ? (
