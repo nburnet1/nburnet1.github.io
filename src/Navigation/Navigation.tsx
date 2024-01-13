@@ -44,7 +44,7 @@ export default function Navigation(props: NavigationProps) {
                         <ListItemButton
                             sx={{
                                 textAlign: 'center',
-                                backgroundColor: props.location.pathname == ("/" + item.toLowerCase()) ? "#0066CC" : "inherit",
+                                backgroundColor: props.location.pathname === ("/" + item.toLowerCase()) ? "#0066CC" : "inherit",
                             }}>
                             <Linkmui component={Link} onClick={() => {
                             }} to={"/" + item.toLowerCase()}
@@ -91,7 +91,7 @@ export default function Navigation(props: NavigationProps) {
                                     tabIndex={-1}
                                     sx={{
                                         color: '#F0F0F0',
-                                        border: props.location.pathname == ("/" + item.toLowerCase()) ? "2px solid #333333" : "inherit",
+                                        border: props.location.pathname === ("/" + item.toLowerCase()) ? "2px solid #333333" : "inherit",
                                     }}>
                                 <Linkmui component={Link} to={"/" + item.toLowerCase()}
                                          color={"inherit"}

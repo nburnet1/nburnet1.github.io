@@ -1,4 +1,3 @@
-import React from "react";
 import {Box, Container, Link, Typography} from "@mui/material";
 import Divider from "@mui/material/Divider";
 import Grid from '@mui/material/Grid';

@@ -1,4 +1,3 @@
-import React from "react";
 import {AppBar, List, Toolbar} from "@mui/material";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";

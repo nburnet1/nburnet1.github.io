@@ -1,4 +1,3 @@
-import React from "react";
 import {Paper} from "@mui/material";
 import ChangeHistoryIcon from "@mui/icons-material/ChangeHistory";
 import HomeNav from "../HomeNav/HomeNav";
@@ -19,8 +18,8 @@ function Home() {
 
                     <Paper className={"home-para"} elevation={1}>
                         <p>
-                            Hey there! Thanks for visiting my portfolio. I am an upcoming Computer Science graduate who loves
-                            problem solving and coding. I am currently seeking a full-time position in software development.
+                            Hey there! Thanks for visiting my portfolio. I am a Computer Science graduate who loves
+                            problem solving and coding. I just recently started a new position at Intellic Integration!
                             Please see my&nbsp;
                             <Linkmui component={Link} to="/resume" color="inherit">resume</Linkmui>
                             &nbsp;for more information!
