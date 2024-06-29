@@ -166,6 +166,7 @@ export default function Home() {
                 variant="shadow"
                 color="primary"
                 type="submit"
+                name="submit"
                 className="mt-4"
               >
                 Send Message
