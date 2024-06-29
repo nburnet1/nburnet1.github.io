@@ -19,7 +19,7 @@ export default function Home() {
 
     const formData = new FormData(event.target as HTMLFormElement);
 
-    fetch('/', {
+    fetch('/resume.json', {
       method: 'POST',
       body: formData,
     })
@@ -144,7 +144,7 @@ export default function Home() {
         <div className="flex flex-col gap-4">
 
           {!isError && !isSubmitted ?
-            <form className="" method="POST" name="contact" data-netlify="true" onSubmit={handleSubmit}>
+            <form method="POST" name="contact" data-netlify="true" onSubmit={handleSubmit}>
               <input type="hidden" name="form-name" value="contact" />
 
               <Input className="bg-background-800 rounded px-1" variant="underlined" isRequired type="text" name="name" label="Name" id="name" />
