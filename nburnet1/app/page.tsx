@@ -13,7 +13,6 @@ export default function Home() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isError, setIsError] = useState(false);
   const [Error, setError] = useState("");
-  const [requestType, setRequestType] = useState("website");
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
@@ -29,8 +28,6 @@ export default function Home() {
         setIsError(true);
         setError(error);
       });
-
-    setIsSubmitted(true)
   };
   return (
     <>
@@ -154,8 +151,9 @@ export default function Home() {
               <Input className="bg-background-800 rounded px-1" variant="underlined" isRequired type="email" name="email" label="Email" id="email" />
               <Input
                 label="Phone Number (Optional)"
-                type="telephone"
+                type="tel"
                 name="telephone"
+                id="telephone"
                 className="bg-background-800 rounded px-1" variant="underlined"
               />
 
