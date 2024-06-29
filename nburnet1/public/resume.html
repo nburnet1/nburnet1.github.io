@@ -1,0 +1,701 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Noah Burnette</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>/* Utils */
+/*----- Colors -----*/
+/*----- Fonts -----*/
+/*----- Dimensions and sizes -----*/
+/* Base */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Josefin Sans Light'), local('JosefinSans-Light'),
+    url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'),
+    url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'),
+    url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'),
+    url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'),
+    url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'),
+    url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'),
+    url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'),
+    url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+
+html {
+  background: white;
+}
+
+body {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: white;
+  margin: 50px 0 100px;
+  letter-spacing: 0.3px;
+  color: #39424b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+
+h3.bold {
+  font-weight: 700;
+}
+
+h4 {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+h4.bold {
+  font-weight: 700;
+}
+
+h5 {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+
+h5.italic {
+  font-style: italic;
+}
+
+h6 {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #2895f1;
+}
+
+a .fa-external-link {
+  font-size: 10px;
+  vertical-align: text-top;
+}
+
+p,
+li {
+  font-size: 11px;
+}
+
+blockquote {
+  font-size: 11px;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 10px 25px;
+}
+
+em {
+  color: #999;
+}
+
+ul {
+  margin: 10px 0 0;
+  -webkit-padding-start: 25px;
+}
+
+ul li {
+  padding-left: 10px;
+}
+
+ul.minimal {
+  list-style: none;
+  padding: 0;
+}
+
+ul.minimal li {
+  margin-bottom: 3px;
+  padding-left: 0;
+}
+
+ul.two-column {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 28px;
+  column-count: 2;
+  column-gap: 28px;
+}
+
+ul.two-column li {
+  padding-left: 0;
+}
+
+@page {
+  size: A4;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.keyline {
+  width: 45px;
+  margin: 8px 0 10px;
+  border-top: 1px solid #56817a;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.profile-pic {
+  margin-top: -5px;
+  margin-right: 18px;
+}
+
+.profile-pic img {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 2px solid #56817a;
+}
+
+.summary {
+  margin: 5px 0 5px;
+}
+
+.sublink {
+  font-size: 70%;
+  font-weight: 200;
+  color: dimgray;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Layouts */
+.page {
+  background: white;
+  width: 612px;
+  min-height: 792px;
+  display: block;
+  margin: 0 auto;
+  border-top: 10px solid #56817a;
+  padding: 36px 22px 30px 34px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.page:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.left-column {
+  float: left;
+  width: 160px;
+  margin-right: 20px;
+  word-wrap: break-word;
+}
+
+.right-column {
+  width: auto;
+  overflow: hidden;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 36px 0 30px;
+    box-shadow: none;
+  }
+
+  .page .resume-header,
+  .page .resume-content {
+    padding: 0 22px 0 34px;
+  }
+
+  .container {
+    page-break-inside: avoid;
+  }
+
+  .work-container .item {
+    page-break-inside: avoid;
+  }
+
+  .fa-external-link {
+    display: none;
+  }
+}
+
+/* Components */
+.info-tag-container {
+  margin-bottom: 5px;
+}
+
+.info-tag-container .fa {
+  font-size: 14px;
+  width: 12px;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.info-tag-container .fa.fa-map-marker {
+  font-size: 16px;
+}
+
+.info-tag-container .fa.fa-mobile {
+  font-size: 18px;
+}
+
+.info-tag-container .fa.fa-envelope-o {
+  font-size: 12px;
+}
+
+.info-tag-container .fa.fa-desktop {
+  font-size: 11px;
+}
+
+.info-tag-container .fa.fa-external-link {
+  width: auto;
+  font-size: inherit;
+  vertical-align: text-top;
+}
+
+.info-tag-container .info-text {
+  font-size: 12px;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 139px;
+}
+
+.references-container .fa {
+  font-size: 14px;
+}
+
+.education-container .location {
+  padding-bottom: 6px;
+  font-weight: 400;
+}
+
+.education-container .specialization {
+  text-transform: none;
+  font-style: italic;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-skill {
+  font-size: 80%;
+}
+
+.skill {
+  margin: 0.15em;
+  padding: 0.15em;
+  background: ghostwhite;
+  border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+  <main id="resume" class="page">
+    <header class="resume-header clearfix">
+        <div class="profile-header pull-left">
+            <h1>Noah Burnette</h1>
+            <h2>I make software for the manufacturing industry</h2>
+        </div>
+        <div class="profile-pic pull-right">
+        </div>
+    </header>
+    <div class="resume-content">
+      <aside class="left-column">
+        <div class="container about-container">
+        
+            <div class="title">
+                <h3>Contact</h3>
+                <div class="keyline"></div>
+            </div>
+            <div class="info-tag-container">
+                <i class="fa fa-map-marker"></i>
+            
+                <h6 class="info-text"> Asheville, North Carolina  </h6>
+            </div>
+        
+            <div class="info-tag-container">
+                <i class="fa fa-envelope-o"></i>
+            
+                <h6 class="info-text">
+                    <a href="mailto:nburnet1022@duck.com" target="_blank">
+                        nburnet1022@duck.com
+                    </a>
+                </h6>
+            </div>
+            <div class="info-tag-container">
+                <i class="fa fa-mobile"></i>
+            
+                <h6 class="info-text">
+                    <a href="tel:(828)551-0543" target="_blank">
+                        (828)551-0543
+                    </a>
+                </h6>
+            </div>
+            <div class="info-tag-container">
+                <i class="fa fa-globe"></i>
+            
+                <h6 class="info-text">
+                    <a href="https://burnette.tech" target="_blank">
+                        burnette.tech
+                    </a>
+                </h6>
+            </div>
+                         <div class="info-tag-container">
+                             <i class="fa fa-github"></i>
+                         
+                             <h6 class="info-text">
+                                 <a href="https://github.com/nburnet1" target="_blank">
+                                     nburnet1
+                                 </a>
+                             </h6>
+                         </div>                <div class="info-tag-container">
+                            <i class="fa fa-linkedin-square"></i>
+                        
+                            <h6 class="info-text">
+                                <a href="https://www.linkedin.com/in/nburnet1/" target="_blank">
+                                    Noah Burnette
+                                </a>
+                            </h6>
+                        </div></div>            <div class="skills-container">
+                    <section class="container">
+                            <div class="title">
+                                <h3>Languages</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Go</h6>
+                                    <h6 class="main-skill skill">Python</h6>
+                                    <h6 class="main-skill skill">SQL</h6>
+                                    <h6 class="main-skill skill">TypeScript</h6>
+                                    <h6 class="main-skill skill">Java</h6>
+                                    <h6 class="main-skill skill">JavaScript</h6>
+                                    <h6 class="main-skill skill">Shell</h6>
+                                    <h6 class="main-skill skill">HTML/CSS</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Frameworks/Libraries</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Gin</h6>
+                                    <h6 class="main-skill skill">Flask</h6>
+                                    <h6 class="main-skill skill">Gorm</h6>
+                                    <h6 class="main-skill skill">Next.js</h6>
+                                    <h6 class="main-skill skill">React</h6>
+                                    <h6 class="main-skill skill">Node.js</h6>
+                                    <h6 class="main-skill skill">Redux</h6>
+                                    <h6 class="main-skill skill">Express</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Data/Tools</h3>
+                                <div class="keyline"></div>
+                            </div>                    <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Git</h6>
+                                    <h6 class="main-skill skill">Firebase</h6>
+                                    <h6 class="main-skill skill">Jira</h6>
+                                    <h6 class="main-skill skill">Kubernetes</h6>
+                                    <h6 class="main-skill skill">Docker</h6>
+                                    <h6 class="main-skill skill">PostgreSQL</h6>
+                                    <h6 class="main-skill skill">MSSQL</h6>
+                                    <h6 class="main-skill skill">Azure DevOps</h6>
+                            </div>
+                    </section>
+            </div>
+      </aside>
+      <div class="right-column">
+        <div class="container summary-container">
+            <div class="title">
+                <h3>Summary</h3>
+                <div class="keyline"></div>
+            </div>
+            <p class="summary">
+                I am a software engineer that digitally transforms manufacturing across the world.
+            </p>
+        </div>
+        <div class="container work-container">
+            <div class="title">
+                <h3>Experience</h3>
+                <div class="keyline"></div>
+            </div>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h5 class="italic pull-right">
+                            <span class="startDate">12/2023</span>
+                            <span class="endDate"> - Present</span>
+                    </h5>
+                </div>
+        
+                <h4>MES Software Engineer</h4>
+        
+        
+                <p class="summary">Intellic Integration</p>
+        
+                <ul>
+                    <li>Developed versioned test-driven MES applications using Ignition.</li>
+                    <li>Created a Unified Development Environment using containerization, allowing for homogeneous developer experience.</li>
+                    <li>Gained experience in various fields, including food and beverage and battery manufacturing.</li>
+                    <li>Assisted in the development of a native test engine for Ignition, streamlining testing processes.</li>
+                </ul>
+            </section>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h5 class="italic pull-right">
+                            <span class="startDate">04/2023</span>
+                            <span class="endDate"> - 11/2023</span>
+                    </h5>
+                </div>
+        
+                <h4>Software Developer Intern</h4>
+        
+        
+                <p class="summary">Sierra Nevada Brewing Co.</p>
+        
+                <ul>
+                    <li>Developed modular Ignition SCADA applications.</li>
+                    <li>Employed T-SQL to design stored procedures and views for streamlined database operations.</li>
+                    <li>Implemented back-end functionality using Python, enhancing the performance of server-side calls.</li>
+                    <li>Led the adoption of Agile practices using Azure DevOps.</li>
+                </ul>
+            </section>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h5 class="italic pull-right">
+                            <span class="startDate">12/2021</span>
+                            <span class="endDate"> - 04/2023</span>
+                    </h5>
+                </div>
+        
+                <h4>Network Technician</h4>
+        
+        
+                <p class="summary">Microtech Knives</p>
+        
+                <ul>
+                    <li>Managed and installed Linux infrastructure.</li>
+                    <li>Created Docker images to facilitate seamless deployment of workspaces.</li>
+                    <li>Conducted network analysis, uncovering potential security threats.</li>
+                    <li>Installed and configured Meraki hardware, enhancing network robustness.</li>
+                </ul>
+            </section>
+        </div>
+        <div class="container project-container">
+            <div class="title">
+                <h3>Projects</h3>
+                <div class="keyline"></div>
+            </div>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h3 class="bold pull-left">
+                            <a href="https://github.com/nburnet1/gomes" target="_blank">
+                                GoMES
+                                    <span class="sublink">∙ <a href="https://github.com/nburnet1/gomes" target="_blank" class="sublink">https://github.com/nburnet1/gomes</a></span>
+                            </a>
+                    </h3>
+                    <h5 class="italic pull-right">
+                            <span class="startDate">05/2024</span>
+                            <span class="endDate"> - Present</span>
+                    </h5>
+                </div>
+                  <h4>
+                    Implementation of MES within a ISA95 context. Designed to be reusable and configurable. 
+                  </h4>
+        
+        
+        
+        
+                <ul>
+                    <li>Developed a modular event driven manufacturing execution system using Go</li>
+                    <li>Automated DAO and model creation using Gorm, decoupling the database from the application.</li>
+                    <li>Used Docker to containerize the application, streamlining deployment and scaling.</li>
+                    <li>Created documented RESTful API using Gin and Swag, simplifying integration with other systems.</li>
+                    <li>Implemented Edge capabilties using MQTT and OPC-UA, enabling near real-time data collection and analysis.</li>
+                </ul>
+            </section>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h3 class="bold pull-left">
+                            <a href="https://github.com/nburnet1/pyile-protocol" target="_blank">
+                                Pyile
+                                    <span class="sublink">∙ <a href="https://github.com/nburnet1/pyile-protocol" target="_blank" class="sublink">https://github.com/nburnet1/pyile-protocol</a></span>
+                            </a>
+                    </h3>
+                    <h5 class="italic pull-right">
+                            <span class="startDate">06/2022</span>
+                            <span class="endDate"> - 11/2023</span>
+                    </h5>
+                </div>
+                  <h4>
+                    Modular Python application enabling secure and private messaging via P2P.
+                  </h4>
+        
+        
+        
+        
+                <ul>
+                    <li>Created Pyile protocol supporting authentication and messaging, ensuring data privacy.</li>
+                    <li>Implemented robust security measures to protect user communications and integrity.</li>
+                </ul>
+            </section>
+        </div>
+        <div class="container education-container">
+            <div class="title">
+                <h3>Education</h3>
+                <div class="keyline"></div>
+            </div>
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                    University of North Carolina Asheville
+            </h3>
+            <h5 class="italic pull-right">
+                    <span class="startDate">05/2020</span>
+                    <span class="endDate"> - 12/2023</span>
+            </h5>
+        </div>
+         
+                <h4>Bachelor of Science Computer Science</h4>
+        
+              </section>
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                    CodePath
+            </h3>
+            <h5 class="italic pull-right">
+                    <span class="startDate">02/2022</span>
+                    <span class="endDate"> - 05/2022</span>
+            </h5>
+        </div>
+         
+                <h4>Cybersecurity</h4>
+        
+              </section>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+{
+    "basics": {
+        "name": "Noah Burnette",
+        "label": "I make software for the manufacturing industry",
+        "image": "",
+        "email": "nburnet1022@duck.com",
+        "phone": "(828)551-0543",
+        "url": "https://burnette.tech",
+        "summary": "I am a software engineer that digitally transforms manufacturing across the world.",
+        "location": {
+            "address": "",
+            "postalCode": "",
+            "city": "Asheville,",
+            "countryCode": "",
+            "region": "North Carolina"
+        },
+        "profiles": [
+            {
+                "network": "Github",
+                "username": "nburnet1",
+                "url": "https://github.com/nburnet1"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "Noah Burnette",
+                "url": "https://www.linkedin.com/in/nburnet1/"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Intellic Integration",
+            "position": "MES Software Engineer",
+            "startDate": "December 2023",
+            "endDate": "",
+            "highlights": [
+                "Developed versioned test-driven MES applications using Ignition.",
+                "Created a Unified Development Environment using containerization, allowing for homogeneous developer experience.",
+                "Gained experience in various fields, including food and beverage and battery manufacturing.",
+                "Assisted in the development of a native test engine for Ignition, streamlining testing processes."
+            ],
+            "summary": "Intellic Integration",
+            "url": "https://intellicintegration.com/",
+            "location": null
+        },
+        {
+            "name": "Sierra Nevada Brewing Co.",
+            "position": "Software Developer Intern",
+            "startDate": "April 2023",
+            "endDate": "November 2023",
+            "highlights": [
+                "Developed modular Ignition SCADA applications.",
+                "Employed T-SQL to design stored procedures and views for streamlined database operations.",
+                "Implemented back-end functionality using Python, enhancing the performance of server-side calls.",
+                "Led the adoption of Agile practices using Azure DevOps."
+            ],
+            "summary": "Sierra Nevada Brewing Co.",
+            "url": "https://sierranevada.com/",
+            "location": "Mills River, North Carolina, United States"
+        },
+        {
+            "name": "Microtech Knives",
+            "position": "Network Technician",
+            "startDate": "December 2021",
+            "endDate": "April 2023",
+            "highlights": ["Managed and installed Linux infrastructure.",
+                "Created Docker images to facilitate seamless deployment of workspaces.",
+                "Conducted network analysis, uncovering potential security threats.",
+                "Installed and configured Meraki hardware, enhancing network robustness."],
+            "summary": "Microtech Knives",
+            "url": "https://microtechknives.com/",
+            "location": "Asheville, North Carolina, United States"
+        }
+    ],
+    "education": [
+        {
+            "institution": "University of North Carolina Asheville",
+            "area": "Computer Science",
+            "studyType": "Bachelor of Science",
+            "startDate": "May 2020",
+            "endDate": "December 2023",
+            "score": "3.78",
+            "courses": []
+        },
+        {
+            "institution": "CodePath",
+            "area": "Cybersecurity",
+            "studyType": "",
+            "startDate": "February 2022",
+            "endDate": "May 2022",
+            "score": "",
+            "courses": []
+        }
+    ],
+    "skills": [
+        {
+            "name": "Languages",
+            "keywords": [
+                "Go",
+                "Python",
+                "SQL",
+                "TypeScript",
+                "Java",
+                "JavaScript",
+                "Shell",
+                "HTML/CSS"
+            ]
+        },
+        {
+            "name": "Frameworks/Libraries",
+            "keywords": [
+                "Gin",
+                "Flask",
+                "Gorm",
+                "Next.js",
+                "React",
+                "Node.js",
+                "Redux",
+                "Express"
+                
+                
+                
+            ]
+        },
+        {
+            "name": "Data/Tools",
+            "keywords": [
+                "Git",
+                "Firebase",
+                "Jira",
+                "Kubernetes",
+                "Docker",
+                "PostgreSQL",
+                "MSSQL",
+                "Azure DevOps"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "GoMES",
+            "startDate": "May 2024",
+            "endDate": "",
+            "description": "Implementation of MES within a ISA95 context. Designed to be reusable and configurable. ",
+            "url": "https://github.com/nburnet1/gomes",
+            "highlights": [
+                "Developed a modular event driven manufacturing execution system using Go",
+                "Automated DAO and model creation using Gorm, decoupling the database from the application.",
+                "Used Docker to containerize the application, streamlining deployment and scaling.",
+                "Created documented RESTful API using Gin and Swag, simplifying integration with other systems.",
+                "Implemented Edge capabilties using MQTT and OPC-UA, enabling near real-time data collection and analysis."
+            ]
+        },
+        {
+            "name": "Pyile",
+            "startDate": "June 2022",
+            "endDate": "November 2023",
+            "description": "Modular Python application enabling secure and private messaging via P2P.",
+            "url": "https://github.com/nburnet1/pyile-protocol",
+            "highlights": [
+                "Created Pyile protocol supporting authentication and messaging, ensuring data privacy.",
+                "Implemented robust security measures to protect user communications and integrity."
+            ]
+        }
+    ]
+}
