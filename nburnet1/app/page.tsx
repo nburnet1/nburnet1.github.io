@@ -175,7 +175,7 @@ export default function Home() {
           {isError && <center><p className="px-1">There was an error submitting your form. Please try again later.</p></center>}
           {isSubmitted && <center><p className="px-1">Thank you! I will get back to you soon.</p></center>}
         </div>
-      </section>
+      </section >
 
 
     </>
