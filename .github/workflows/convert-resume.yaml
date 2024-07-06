@@ -34,5 +34,5 @@ jobs:
           git add nburnet1/public/Noah_Burnette_Resume.pdf
           git commit -m "Updated Noah_Burnette_Resume.pdf from GH Actions"
           git push
-        # env:
-        #   GITHUB_TOKEN: ${{ secrets.WEBSITE_BOT_PAT }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.WEBSITE_BOT_PAT }}
