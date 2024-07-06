@@ -8,6 +8,7 @@ on:
 jobs:
   convert-resume: 
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -26,8 +27,8 @@ jobs:
       - name: HTML -> PDF
         run: wkhtmltopdf nburnet1/public/resume.html nburnet1/public/Noah_Burnette_Resume.pdf
 
-    - name: Upload PDF
-      uses: actions/upload-artifact@v3
-      with:
-        name: Noah_Burnette_Resume
-        path: nburnet1/public/Noah_Burnette_Resume.pdf
+      - name: Upload PDF
+        uses: actions/upload-artifact@v3
+        with:
+          name: Noah_Burnette_Resume
+          path: nburnet1/public/Noah_Burnette_Resume.pdf
