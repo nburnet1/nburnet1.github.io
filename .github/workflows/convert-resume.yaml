@@ -8,7 +8,7 @@ on:
 jobs:
   convert-resume: 
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -22,7 +22,7 @@ jobs:
         run: npm install -g resumed jsonresume-theme-latte && sudo apt update -y && sudo apt install -y wkhtmltopdf
 
       - name: JSON -> HTML
-        run: resumed render nburnet1/public/resume.json --theme latte --output nburnet1/public/resume.html
+        run: resumed render nburnet1/public/resume.json --theme jsonresume-theme-latte --output nburnet1/public/resume.html
 
       - name: HTML -> PDF
         run: wkhtmltopdf nburnet1/public/resume.html nburnet1/public/Noah_Burnette_Resume.pdf
