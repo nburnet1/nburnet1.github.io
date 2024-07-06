@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.WEBSITE_BOT_PAT }}
     
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -33,6 +35,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git add nburnet1/public/Noah_Burnette_Resume.pdf
           git commit -m "Updated Noah_Burnette_Resume.pdf from GH Actions"
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/nburnet1/nburnet1.github.io.git HEAD:main
-        env:
-          GITHUB_TOKEN: ${{ secrets.WEBSITE_BOT_PAT }}
+          git push
+       
