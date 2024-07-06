@@ -1,0 +1,33 @@
+name: Convert Resume
+
+on:
+  push:
+    paths:
+      - nburnet1/public/resume.json
+
+jobs:
+  convert-resume: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+    
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+        
+      - name: Install dependencies
+        run: npm install -g resumed jsonresume-theme-latte && sudo apt update -y && sudo apt install -y wkhtmltopdf
+
+      - name: JSON -> HTML
+        run: resumed render nburnet1/public/resume.json --theme latte --output nburnet1/public/resume.html
+
+      - name: HTML -> PDF
+        run: wkhtmltopdf nburnet1/public/resume.html nburnet1/public/Noah_Burnette_Resume.pdf
+
+    - name: Upload PDF
+      uses: actions/upload-artifact@v3
+      with:
+        name: Noah_Burnette_Resume
+        path: nburnet1/public/Noah_Burnette_Resume.pdf
