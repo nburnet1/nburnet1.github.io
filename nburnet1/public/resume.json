@@ -122,9 +122,10 @@
             "name": "GoMES",
             "startDate": "May 2024",
             "endDate": "",
-            "description": "A real-time, event-driven namespace engine written in Go for dynamic, concurrent data collection and processing.",
+            "description": "A real-time, event-driven framework written in Go for dynamic, concurrent data collection and processing.",
             "url": "https://github.com/nburnet1/gomes",
             "highlights": [
+                "Developed namespace engine that contextualizes data in a hierarchical fashion",
                 "Leveraged native Go channels for high-concurrency data streams.",
                 "Integrated an admin page for configuration and monitoring.",
                 "Enabled support for user-defined models through Gorm.",
