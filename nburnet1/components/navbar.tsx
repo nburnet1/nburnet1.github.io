@@ -41,9 +41,6 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal aria-label={Resume.basics.profiles[1].network} href={Resume.basics.profiles[1].url}>
-            <LinkedInIcon className="text-default-500" />
-          </Link>
           <Link isExternal aria-label="Github" href={Resume.basics.profiles[0].url}>
             <GithubIcon className="text-default-500" />
           </Link>
@@ -62,30 +59,12 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal aria-label={Resume.basics.profiles[1].network} href={Resume.basics.profiles[1].url}>
-          <LinkedInIcon className="text-default-500" />
-        </Link>
         <Link isExternal aria-label={Resume.basics.profiles[0].network} href={Resume.basics.profiles[0].url}>
           <GithubIcon className="text-default-500" />
         </Link>
         <ThemeSwitch />
         {/* <NavbarMenuToggle /> */}
       </NavbarContent>
-
-      {/* <NavbarMenu>
-        <div className="mx-4 mt-2 flex flex-col gap-2">
-          {Resume.basics.profiles.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                href={item.url}
-                size="lg"
-              >
-                {item.network}
-              </Link>
-            </NavbarMenuItem>
-          ))}
-        </div>
-      </NavbarMenu> */}
     </NextUINavbar>
   );
 };

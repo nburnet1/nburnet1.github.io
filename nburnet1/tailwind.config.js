@@ -26,17 +26,17 @@ module.exports = {
           },
           colors: {
             background: {
-              DEFAULT: "#B2C2BF",
-              50: "#0b0e0e",
-              100: "#222b29",
-              200: "#384744",
-              300: "#4f6460",
-              400: "#65807b",
-              500: "#7f9a95",
-              600: "#9bb0ac",
-              700: "#b8c7c4",
-              800: "#d4dddc",
-              900: "#f1f4f3"
+              DEFAULT: "#FFF",
+              50: "#0c0d0d",
+              100: "#242827",
+              200: "#3d4342",
+              300: "#555d5c",
+              400: "#6d7876",
+              500: "#879290",
+              600: "#a2aaa9",
+              700: "#bcc2c1",
+              800: "#d7dbda",
+              900: "#f2f3f3"
             },
             primary: {
               DEFAULT: "#2C3E50",
@@ -59,7 +59,7 @@ module.exports = {
           },
           colors: {
             background: { 
-              DEFAULT: "#3c4241",
+              DEFAULT: "#000000",
               50: "#f2f3f3",
               100: "#d7dbda",
               200: "#bcc2c1",
@@ -86,7 +86,6 @@ module.exports = {
             },
           }
         },
-        // Additional custom themes can be added here
       }
     })
   ]

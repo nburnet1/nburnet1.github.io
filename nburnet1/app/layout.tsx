@@ -59,7 +59,7 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "min-h-screen font-sans antialiased bg-gradient-to-tl to-background-600 light:to-background-700 from-background from-85% ",
+          "min-h-screen font-sans antialiased",
           fontSans.variable,
         )}
       >
@@ -69,7 +69,7 @@ export default function RootLayout({
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
               {children}
             </main>
-            <footer className="w-full flex-row justify-center flex mt-4 py-4 gap-4 bg-background-800" >
+            <footer className="w-full flex-row justify-center flex mt-4 py-4 gap-4 border-t border-background-500" >
               <div className="flex flex-col p-4 gap-4">
                 <Link
                   isExternal
@@ -84,15 +84,6 @@ export default function RootLayout({
                 <Link
                   isExternal
                   className="flex items-center gap-1 text-current"
-                  href="https://nextjs.org/"
-                  title="Next.js"
-                >
-                  <p className="text-default-500">Next.js</p>
-                  <LaunchIcon fontSize="small" className="text-default-500" />
-                </Link>
-                <Link
-                  isExternal
-                  className="flex items-center gap-1 text-current"
                   href="https://jsonresume.org/"
                   title="jsonresume.org"
                 >
@@ -102,10 +93,6 @@ export default function RootLayout({
 
               </div>
                 <div className="flex flex-col p-4 gap-4">
-                  <Link className="gap-2 flex items-center" isExternal aria-label={Resume.basics.profiles[1].network} href={Resume.basics.profiles[1].url}>
-                    <LinkedInIcon className="text-default-500" />
-                  <p className="text-default-500">LinkedIn</p>
-                  </Link>
                 <Link className="gap-2 flex items-center" isExternal aria-label="Github" href={Resume.basics.profiles[0].url}>
                     <GithubIcon className="text-default-500" />
                   <p className="text-default-500">Github</p>
@@ -114,7 +101,6 @@ export default function RootLayout({
                   <MailIcon className="text-default-500" />
                   <p className="text-default-500">Email</p>
                 </Link>
-                
 
                 </div>
             </footer>

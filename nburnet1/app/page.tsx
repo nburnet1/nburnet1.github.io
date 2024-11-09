@@ -130,7 +130,7 @@ export default function Home() {
                 {skill.name}
               </h4>
               <ul className="grid grid-cols-2 gap-2 text-center">{skill.keywords && skill.keywords.map((keyword, index) => (
-                <Chip size="lg" startContent={<Image alt={keyword} className="" width={18} src={`/icons/${keyword.replace(/\s+/g, "").replace(/\/+/g,"")}.svg`} />} className="bg-background-800 rounded" key={index}>{keyword}</Chip>
+                <Chip size="lg" className="bg-background-800 rounded" key={index}>{keyword}</Chip>
               ))}</ul>
             </div>
           ))}
@@ -141,23 +141,23 @@ export default function Home() {
         <h3 id="contact" className={title({ size: "sm", class: "mt-4 text-foreground-500" })}>
           Contact
         </h3>
-        <div className="flex flex-col gap-4">
+        <div className="container max-w-lg">
 
           {!isError && !isSubmitted ?
             <form method="POST" name="contact" data-netlify="true" onSubmit={handleSubmit}>
               <input type="hidden" name="form-name" value="contact" />
 
-              <Input className="bg-background-800 rounded px-1" variant="underlined" isRequired type="text" name="name" label="Name" id="name" />
-              <Input className="bg-background-800 rounded px-1" variant="underlined" isRequired type="email" name="email" label="Email" id="email" />
+              <Input className="rounded px-1" variant="bordered" isRequired type="text" name="name" label="Name" id="name" />
+              <Input className="rounded px-1" variant="bordered" isRequired type="email" name="email" label="Email" id="email" />
               <Input
                 label="Phone Number (Optional)"
                 type="tel"
                 name="telephone"
                 id="telephone"
-                className="bg-background-800 rounded px-1" variant="underlined"
+                className="rounded px-1" variant="bordered"
               />
 
-              <Input className="bg-background-800 rounded px-1" variant="underlined" isRequired type="textarea" label="Message" name="message" id="message" />
+              <Input className="rounded px-1" variant="bordered" isRequired type="textarea" label="Message" name="message" id="message" />
 
 
               <Button

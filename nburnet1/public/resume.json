@@ -3,10 +3,10 @@
         "name": "Noah Burnette",
         "label": "I make software for the manufacturing industry",
         "image": "",
-        "email": "nburnet1022@duck.com",
+        "email": "nburnet1@duck.com",
         "phone": "(828)551-0543",
         "url": "https://burnette.tech",
-        "summary": "I am a software engineer who helps digitally transform manufacturing across the world. ",
+        "summary": "I am a software engineer who helps digitally transform manufacturing around the world.",
         "location": {
             "address": "",
             "postalCode": "",
@@ -19,11 +19,6 @@
                 "network": "Github",
                 "username": "nburnet1",
                 "url": "https://github.com/nburnet1"
-            },
-            {
-                "network": "LinkedIn",
-                "username": "Noah Burnette",
-                "url": "https://www.linkedin.com/in/nburnet1/"
             }
         ]
     },
@@ -34,10 +29,12 @@
             "startDate": "December 2023",
             "endDate": "",
             "highlights": [
-                "Developed versioned test-driven MES applications using Ignition.",
-                "Created a Unified Development Environment using containerization, improving developer experience.",
-                "Gained experience in various fields, including food and beverage and battery manufacturing.",
-                "Assisted in the development of a native test engine for Ignition, streamlining testing processes."
+                "Built large-scale MES applications using Ignition.",
+                "Developed web services with Flask and htmx to enhance system automation.",
+                "Created internal tools with Go and Python to boost deployment efficiency.",
+                "Worked across diverse industries, including food and beverage and battery manufacturing.",
+                "Contributed to a native test engine in Ignition, improving testing workflows.",
+                "Provided technical support and documentation to stakeholders, ensuring successful implementations."
             ],
             "summary": "Intellic Integration",
             "url": "https://intellicintegration.com/",
@@ -49,10 +46,10 @@
             "startDate": "April 2023",
             "endDate": "November 2023",
             "highlights": [
-                "Developed modular Ignition SCADA applications.",
-                "Employed T-SQL to design stored procedures and views for streamlined database operations.",
-                "Implemented back-end functionality using Python, enhancing the performance of server-side calls.",
-                "Led the adoption of Agile practices using Azure DevOps."
+                "Developed MES applications in Ignition.",
+                "Designed T-SQL stored procedures and views to optimize database operations.",
+                "Enhanced server-side performance by implementing backend functionality in Python.",
+                "Built user-friendly interfaces to improve user experience and efficiency."
             ],
             "summary": "Sierra Nevada Brewing Co.",
             "url": "https://sierranevada.com/",
@@ -63,10 +60,12 @@
             "position": "Network Technician",
             "startDate": "December 2021",
             "endDate": "April 2023",
-            "highlights": ["Managed and installed Linux infrastructure.",
-                "Created Docker images to facilitate seamless deployment of workspaces.",
-                "Conducted network analysis, uncovering potential security threats.",
-                "Installed and configured Meraki hardware, enhancing network robustness."],
+            "highlights": [
+                "Managed and deployed Linux infrastructure.",
+                "Built and maintained Docker images to facilitate seamless workspace deployment.",
+                "Conducted network analysis to identify and address security threats.",
+                "Configured Meraki hardware to strengthen network reliability."
+            ],
             "summary": "Microtech Knives",
             "url": "https://microtechknives.com/",
             "location": "Asheville, North Carolina, United States"
@@ -81,15 +80,6 @@
             "endDate": "December 2023",
             "score": "3.78",
             "courses": []
-        },
-        {
-            "institution": "CodePath",
-            "area": "Cybersecurity",
-            "studyType": "",
-            "startDate": "February 2022",
-            "endDate": "May 2022",
-            "score": "",
-            "courses": []
         }
     ],
     "skills": [
@@ -101,8 +91,6 @@
                 "SQL",
                 "TypeScript",
                 "Java",
-                "JavaScript",
-                "Shell",
                 "HTML/CSS"
             ]
         },
@@ -112,27 +100,20 @@
                 "Gin",
                 "Flask",
                 "Gorm",
-                "Next.js",
                 "React",
-                "Node.js",
-                "Redux",
-                "Express"
-                
-                
-                
+                "htmx",
+                "Node.js"
             ]
         },
         {
-            "name": "Data/Tools",
+            "name": "Platforms/Tools",
             "keywords": [
                 "Git",
-                "Firebase",
-                "Jira",
-                "Kubernetes",
+                "Ignition",
                 "Docker",
-                "PostgreSQL",
+                "Kubernetes",
                 "MSSQL",
-                "Azure DevOps"
+                "PostgreSQL"
             ]
         }
     ],
@@ -141,14 +122,13 @@
             "name": "GoMES",
             "startDate": "May 2024",
             "endDate": "",
-            "description": "Implementation of MES within a ISA95 context. Designed to be reusable and configurable. ",
+            "description": "A real-time, event-driven namespace engine written in Go for dynamic, concurrent data collection and processing.",
             "url": "https://github.com/nburnet1/gomes",
             "highlights": [
-                "Developed a modular event driven manufacturing execution system using Go",
-                "Automated DAO and model creation using Gorm, decoupling the database from the application.",
-                "Used Docker to containerize the application, streamlining deployment and scaling.",
-                "Created documented RESTful API using Gin and Swag, simplifying integration with other systems.",
-                "Implemented Edge capabilties using MQTT and OPC-UA, enabling near real-time data collection and analysis."
+                "Leveraged native Go channels for high-concurrency data streams.",
+                "Integrated an admin page for configuration and monitoring.",
+                "Enabled support for user-defined models through Gorm.",
+                "Built a straightforward namespace API for read, write, and subscribe operations."
             ]
         },
         {
@@ -158,8 +138,8 @@
             "description": "Modular Python application enabling secure and private messaging via P2P.",
             "url": "https://github.com/nburnet1/pyile-protocol",
             "highlights": [
-                "Created Pyile protocol supporting authentication and messaging, ensuring data privacy.",
-                "Implemented robust security measures to protect user communications and integrity."
+                "Designed a TCP/IP protocol with authentication and messaging.",
+                "Built a user-friendly interface with Tkinter."
             ]
         }
     ]
