@@ -25,16 +25,18 @@
     "work": [
         {
             "name": "Intellic Integration",
-            "position": "MES Software Engineer",
+            "position": "Industrial Software Engineer",
             "startDate": "December 2023",
             "endDate": "",
             "highlights": [
-                "Built large-scale MES applications using Ignition.",
-                "Developed web services with Flask and htmx to enhance system automation.",
-                "Created internal tools with Go and Python to boost deployment efficiency.",
-                "Worked across diverse industries, including food and beverage and battery manufacturing.",
-                "Contributed to a native test engine in Ignition, improving testing workflows.",
-                "Provided technical support and documentation to stakeholders, ensuring successful implementations."
+                "Built large-scale industrial applications using Ignition and Unified Namespace (UNS) architecture.",
+                "Developed Python microservices to fulfill niche client-specific use cases.",
+                "Created internal tooling in Go and Python to accelerate deployment workflows.",
+                "Improved developer experience by building custom tools such as an ORM, debugger, and auto-discover for testing.",
+                "Worked across diverse sectors, including food & beverage and battery manufacturing.",
+                "Applied domain-driven design (DDD) principles to accurately model complex business logic.",
+                "Contributed to CI/CD pipelines, automating deployments and reducing manual overhead.",
+                "Delivered technical support and clear documentation to stakeholders, enabling successful implementation and adoption."
             ],
             "summary": "Intellic Integration",
             "url": "https://intellicintegration.com/",
@@ -47,7 +49,7 @@
             "endDate": "November 2023",
             "highlights": [
                 "Developed MES applications in Ignition.",
-                "Designed T-SQL stored procedures and views to optimize database operations.",
+                "Designed stored procedures and views to optimize database operations.",
                 "Enhanced server-side performance by implementing backend functionality in Python.",
                 "Built user-friendly interfaces to improve user experience and efficiency."
             ],
@@ -115,6 +117,17 @@
                 "MSSQL",
                 "PostgreSQL"
             ]
+        },
+        {
+            "name": "Architectures/Practices",
+            "keywords": [
+                "UNS", 
+                "DDD", 
+                "TDD",
+                "EDA", 
+                "MSA", 
+                "CI/CD" 
+            ]
         }
     ],
     "projects": [
@@ -125,22 +138,11 @@
             "description": "A real-time, event-driven framework written in Go for dynamic, concurrent data collection and processing.",
             "url": "https://github.com/nburnet1/gomes",
             "highlights": [
-                "Developed namespace engine that contextualizes data in a hierarchical fashion",
-                "Leveraged native Go channels for high-concurrency data streams.",
-                "Integrated an admin page for configuration and monitoring.",
-                "Enabled support for user-defined models through Gorm.",
-                "Built a straightforward namespace API for read, write, and subscribe operations."
-            ]
-        },
-        {
-            "name": "Pyile",
-            "startDate": "June 2022",
-            "endDate": "November 2023",
-            "description": "Modular Python application enabling secure and private messaging via P2P.",
-            "url": "https://github.com/nburnet1/pyile-protocol",
-            "highlights": [
-                "Designed a TCP/IP protocol with authentication and messaging.",
-                "Built a user-friendly interface with Tkinter."
+                "Built a namespace engine to contextualize data in a hierarchical structure.",
+                "Implemented support for namespace governance and scoped control.",
+                "Decoupled services using gRPC for efficient inter-service communication.",
+                "Enabled automatic MQTT topic generation from the namespace engine.",
+                "Integrated an htmx admin UI for configuration and monitoring."
             ]
         }
     ]
