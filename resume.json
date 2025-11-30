@@ -5,12 +5,12 @@
         "image": "",
         "email": "nburnet1@duck.com",
         "phone": "(828)551-0543",
-        "url": "https://burnette.tech",
+        "url": "https://noah-burnette.com",
         "summary": "I am a software engineer who helps digitally transform manufacturing around the world.",
         "location": {
             "address": "",
             "postalCode": "",
-            "city": "Asheville,",
+            "city": "Asheville",
             "countryCode": "",
             "region": "North Carolina"
         },
@@ -29,13 +29,13 @@
             "startDate": "December 2023",
             "endDate": "",
             "highlights": [
-                "Built large-scale industrial applications using Ignition and Unified Namespace (UNS) architecture.",
+                "Led and built large-scale industrial applications using Ignition and Unified Namespace (UNS) architecture.",
                 "Developed Python microservices to fulfill niche client-specific use cases.",
                 "Created internal tooling in Go and Python to accelerate deployment workflows.",
-                "Improved developer experience by building custom tools such as an ORM, debugger, and auto-discover for testing.",
+                "Improved the developer experience by building a custom debugger, an ORM, and an automated test discovery system",
                 "Worked across diverse sectors, including food & beverage and battery manufacturing.",
                 "Applied domain-driven design (DDD) principles to accurately model complex business logic.",
-                "Contributed to CI/CD pipelines, automating deployments and reducing manual overhead.",
+                "Created CI/CD pipelines, automating deployments and decreasing regressions.",
                 "Delivered technical support and clear documentation to stakeholders, enabling successful implementation and adoption."
             ],
             "summary": "Intellic Integration",
@@ -48,7 +48,7 @@
             "startDate": "April 2023",
             "endDate": "November 2023",
             "highlights": [
-                "Developed MES applications in Ignition.",
+                "Developed MES applications using Ignition.",
                 "Designed stored procedures and views to optimize database operations.",
                 "Enhanced server-side performance by implementing backend functionality in Python.",
                 "Built user-friendly interfaces to improve user experience and efficiency."
