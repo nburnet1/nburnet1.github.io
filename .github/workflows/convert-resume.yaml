@@ -3,7 +3,7 @@ name: Convert Resume
 on:
   push:
     paths:
-      - nburnet1/public/resume.json
+      - resume.json
 
 jobs:
   convert-resume: 
