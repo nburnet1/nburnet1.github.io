@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <title>{{ basics.name }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="{{basics.summary}}"/>
 <meta name="keywords" content="{{basics.name}} {{#skills}}{{#keywords}}{{.}} {{/keywords}}{{/skills}}" />
 <link href="./index.css" rel="stylesheet" />
@@ -28,7 +29,7 @@
 
     <main class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row gap-10 px-6 py-10">
 
-      <aside id="sidebar" class="w-64 md:flex flex-col gap-10">
+      <aside id="sidebar" class="md:w-64 flex flex-col gap-10">
 
         <img class="rounded-full hidden md:flex" src="noah.jpg"/>
 
@@ -37,7 +38,7 @@
           {{#skills}}
             <div class="mb-6">
               <h3 class="text-lg font-semibold text-gray-100">{{ name }}</h3>
-              <ul class="ml-4 mt-2 grid grid-cols-2 sm:flex sm:flex-wrap gap-2 text-gray-300">
+              <ul class="ml-4 mt-2 flex flex-wrap gap-2 text-gray-300">
                 {{#keywords}}
                   <li>
                     <span class="text-sm bg-gray-800 text-gray-200 px-3 py-1 rounded-md">
