@@ -1,149 +1,149 @@
 {
-    "basics": {
-        "name": "Noah Burnette",
-        "label": "I make software for the manufacturing industry",
-        "image": "",
-        "email": "nburnet1@duck.com",
-        "phone": "(828)551-0543",
-        "url": "https://noah-burnette.com",
-        "summary": "I am a software engineer who helps digitally transform manufacturing around the world.",
-        "location": {
-            "address": "",
-            "postalCode": "",
-            "city": "Asheville",
-            "countryCode": "",
-            "region": "North Carolina"
-        },
-        "profiles": [
-            {
-                "network": "Github",
-                "username": "nburnet1",
-                "url": "https://github.com/nburnet1"
-            }
-        ]
+  "basics": {
+    "name": "Noah Burnette",
+    "label": "I make software for the manufacturing industry",
+    "image": "",
+    "email": "nburnet1@duck.com",
+    "phone": "(828)551-0543",
+    "url": "https://noahburnette.dev",
+    "summary": "I am a software engineer who helps digitally transform manufacturing around the world.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Asheville",
+      "countryCode": "",
+      "region": "North Carolina"
     },
-    "work": [
-        {
-            "name": "Intellic Integration",
-            "position": "Industrial Software Engineer",
-            "startDate": "December 2023",
-            "endDate": "",
-            "highlights": [
-                "Led and built large-scale industrial applications using Ignition and Unified Namespace (UNS) architecture.",
-                "Developed Python microservices to fulfill niche client-specific use cases.",
-                "Created internal tooling in Go and Python to accelerate deployment workflows.",
-                "Improved the developer experience by building a custom debugger, an ORM, and an automated test discovery system.",
-                "Worked across diverse sectors, including food & beverage and battery manufacturing.",
-                "Applied domain-driven design (DDD) principles to accurately model complex business logic.",
-                "Created CI/CD pipelines, automating deployments and decreasing regressions.",
-                "Delivered technical support and clear documentation to stakeholders, enabling successful implementation and adoption."
-            ],
-            "summary": "Intellic Integration",
-            "url": "https://intellicintegration.com/",
-            "location": null
-        },
-        {
-            "name": "Sierra Nevada Brewing Co.",
-            "position": "Software Developer Intern",
-            "startDate": "April 2023",
-            "endDate": "November 2023",
-            "highlights": [
-                "Developed MES applications using Ignition.",
-                "Designed stored procedures and views to optimize database operations.",
-                "Enhanced server-side performance by implementing backend functionality in Python.",
-                "Built user-friendly interfaces to improve user experience and efficiency."
-            ],
-            "summary": "Sierra Nevada Brewing Co.",
-            "url": "https://sierranevada.com/",
-            "location": "Mills River, North Carolina, United States"
-        },
-        {
-            "name": "Microtech Knives",
-            "position": "Network Technician",
-            "startDate": "December 2021",
-            "endDate": "April 2023",
-            "highlights": [
-                "Managed and deployed Linux infrastructure.",
-                "Built and maintained Docker images to facilitate seamless workspace deployment.",
-                "Conducted network analysis to identify and address security threats.",
-                "Configured Meraki hardware to strengthen network reliability."
-            ],
-            "summary": "Microtech Knives",
-            "url": "https://microtechknives.com/",
-            "location": "Asheville, North Carolina, United States"
-        }
-    ],
-    "education": [
-        {
-            "institution": "University of North Carolina Asheville",
-            "area": "Computer Science",
-            "studyType": "Bachelor of Science",
-            "startDate": "May 2020",
-            "endDate": "December 2023",
-            "score": "3.78",
-            "courses": []
-        }
-    ],
-    "skills": [
-        {
-            "name": "Languages",
-            "keywords": [
-                "Go",
-                "Python",
-                "SQL",
-                "TypeScript",
-                "Java",
-                "HTML/CSS"
-            ]
-        },
-        {
-            "name": "Frameworks/Libraries",
-            "keywords": [
-                "Gin",
-                "Flask",
-                "Gorm",
-                "React",
-                "htmx",
-                "Node.js"
-            ]
-        },
-        {
-            "name": "Platforms/Tools",
-            "keywords": [
-                "Git",
-                "Ignition",
-                "Docker",
-                "Kubernetes",
-                "MSSQL",
-                "PostgreSQL"
-            ]
-        },
-        {
-            "name": "Architectures/Practices",
-            "keywords": [
-                "UNS", 
-                "DDD", 
-                "TDD",
-                "EDA", 
-                "MSA", 
-                "CI/CD" 
-            ]
-        }
-    ],
-    "projects": [
-        {
-            "name": "GoMES",
-            "startDate": "May 2024",
-            "endDate": "",
-            "description": "A real-time, event-driven framework written in Go for dynamic, concurrent data collection and processing.",
-            "url": "https://github.com/nburnet1/gomes",
-            "highlights": [
-                "Built a namespace engine to contextualize data in a hierarchical structure.",
-                "Implemented support for namespace governance and scoped control.",
-                "Decoupled services using gRPC for efficient inter-service communication.",
-                "Enabled automatic MQTT topic generation from the namespace engine.",
-                "Integrated an htmx admin UI for configuration and monitoring."
-            ]
-        }
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "nburnet1",
+        "url": "https://github.com/nburnet1"
+      }
     ]
+  },
+  "work": [
+    {
+      "name": "Intellic Integration",
+      "position": "Industrial Software Engineer",
+      "startDate": "December 2023",
+      "endDate": "",
+      "highlights": [
+        "Led and built large-scale industrial applications using Ignition and Unified Namespace (UNS) architecture.",
+        "Developed Python microservices to fulfill niche client-specific use cases.",
+        "Created internal tooling in Go and Python to accelerate deployment workflows.",
+        "Improved the developer experience by building a custom debugger, an ORM, and an automated test discovery system.",
+        "Worked across diverse sectors, including food & beverage and battery manufacturing.",
+        "Applied domain-driven design (DDD) principles to accurately model complex business logic.",
+        "Created CI/CD pipelines, automating deployments and decreasing regressions.",
+        "Delivered technical support and clear documentation to stakeholders, enabling successful implementation and adoption."
+      ],
+      "summary": "Intellic Integration",
+      "url": "https://intellicintegration.com/",
+      "location": null
+    },
+    {
+      "name": "Sierra Nevada Brewing Co.",
+      "position": "Software Developer Intern",
+      "startDate": "April 2023",
+      "endDate": "November 2023",
+      "highlights": [
+        "Developed MES applications using Ignition.",
+        "Designed stored procedures and views to optimize database operations.",
+        "Enhanced server-side performance by implementing backend functionality in Python.",
+        "Built user-friendly interfaces to improve user experience and efficiency."
+      ],
+      "summary": "Sierra Nevada Brewing Co.",
+      "url": "https://sierranevada.com/",
+      "location": "Mills River, North Carolina, United States"
+    },
+    {
+      "name": "Microtech Knives",
+      "position": "Network Technician",
+      "startDate": "December 2021",
+      "endDate": "April 2023",
+      "highlights": [
+        "Managed and deployed Linux infrastructure.",
+        "Built and maintained Docker images to facilitate seamless workspace deployment.",
+        "Conducted network analysis to identify and address security threats.",
+        "Configured Meraki hardware to strengthen network reliability."
+      ],
+      "summary": "Microtech Knives",
+      "url": "https://microtechknives.com/",
+      "location": "Asheville, North Carolina, United States"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of North Carolina Asheville",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "May 2020",
+      "endDate": "December 2023",
+      "score": "3.78",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": [
+        "Go",
+        "Python",
+        "SQL",
+        "TypeScript",
+        "Java",
+        "HTML/CSS"
+      ]
+    },
+    {
+      "name": "Frameworks/Libraries",
+      "keywords": [
+        "Gin",
+        "Flask",
+        "Gorm",
+        "React",
+        "htmx",
+        "Node.js"
+      ]
+    },
+    {
+      "name": "Platforms/Tools",
+      "keywords": [
+        "Git",
+        "Ignition",
+        "Docker",
+        "Kubernetes",
+        "MSSQL",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "name": "Architectures/Practices",
+      "keywords": [
+        "UNS",
+        "DDD",
+        "TDD",
+        "EDA",
+        "MSA",
+        "CI/CD"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "GoMES",
+      "startDate": "May 2024",
+      "endDate": "",
+      "description": "A real-time, event-driven framework written in Go for dynamic, concurrent data collection and processing.",
+      "url": "https://github.com/nburnet1/gomes",
+      "highlights": [
+        "Built a namespace engine to contextualize data in a hierarchical structure.",
+        "Implemented support for namespace governance and scoped control.",
+        "Decoupled services using gRPC for efficient inter-service communication.",
+        "Enabled automatic MQTT topic generation from the namespace engine.",
+        "Integrated an htmx admin UI for configuration and monitoring."
+      ]
+    }
+  ]
 }
