@@ -30,12 +30,8 @@ jobs:
         run: |
           wkhtmltopdf \
             --page-size Letter \
-            --margin-top 8mm \
-            --margin-bottom 8mm \
-            --margin-left 8mm \
-            --margin-right 8mm \
             --disable-smart-shrinking \
-            --zoom 1.15 \
+            --zoom 1.3 \
             ./public/resume.html \
             ./public/Noah_Burnette_Resume.pdf
 
