@@ -144,6 +144,19 @@
         "Enabled automatic MQTT topic generation from the namespace engine.",
         "Integrated an htmx admin UI for configuration and monitoring."
       ]
+    },
+    {
+      "name": "Ignition Sift (VS Code Extension)",
+      "startDate": "December 2025",
+      "endDate": "",
+      "description": "Barebones, stub-driven auto-imports for Ignition scripting projects.",
+      "url": "https://github.com/nburnet1/ignition-sift",
+      "highlights": [
+        "Generates Python stubs from Ignition project structure for robust autocompletion.",
+        "Builtin generator converts Python 2 type comments into Python 3 compatible type hints for modern tooling (Pyright).",
+        "Indexes top-level classes and functions across generated stubs for fast symbol search and import suggestions.",
+        "Configurable and documented to support different Ignition project use cases."
+      ]
     }
   ]
 }
