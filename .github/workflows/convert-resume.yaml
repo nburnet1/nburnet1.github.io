@@ -21,10 +21,10 @@ jobs:
           node-version: '20'
         
       - name: Install dependencies
-        run: npm install -g resumed jsonresume-theme-cora && sudo apt update -y && sudo apt install -y wkhtmltopdf
+        run: npm install -g resumed jsonresume-theme-macchiato && sudo apt update -y && sudo apt install -y wkhtmltopdf
 
       - name: JSON -> HTML
-        run: resumed render ./resume.json --theme jsonresume-theme-cora --output ./public/resume.html
+        run: resumed render ./resume.json --theme jsonresume-theme-macchiato --output ./public/resume.html
 
       - name: HTML -> PDF
         run: |
