@@ -150,7 +150,7 @@
       "startDate": "December 2025",
       "endDate": "",
       "description": "Barebones, stub-driven auto-imports for Ignition scripting projects.",
-      "url": "https://github.com/nburnet1/ignition-sift",
+      "url": "https://github.com/nburnet1/ignition-sift", 
       "highlights": [
         "Generates Python stubs from Ignition project structure for robust autocompletion.",
         "Builtin generator converts Python 2 type comments into Python 3 compatible type hints for modern tooling (Pyright).",
