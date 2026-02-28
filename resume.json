@@ -122,11 +122,11 @@
     {
       "name": "Architectures/Practices",
       "keywords": [
-        "UNS",
-        "DDD",
-        "TDD",
-        "EDA",
-        "MSA",
+        "Unified Namespace",
+        "Domain-Driven Design",
+        "Test-Driven Development",
+        "Event-Driven Architecture",
+        "Microservices Architecture",
         "CI/CD"
       ]
     }
