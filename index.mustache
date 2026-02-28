@@ -115,7 +115,11 @@
               <a href="{{url}}" class="hover:underline italic text-gray-400 flex items-center gap-1">
                 {{ name }} <img class="w-4 h-4" src="./external-link.svg"/>
               </a>
-              <div class="text-sm">{{ startDate}} {{#endDate}}- {{ endDate}}{{/endDate}}</div>
+              <div class="text-sm">
+                {{ startDate }} -
+                {{#endDate}}{{ endDate }}{{/endDate}}
+                {{^endDate}}Present{{/endDate}}
+              </div>
               <ul class="list-disc ml-6 mt-2 text-gray-300">
                 {{#highlights}}
                   <li>{{ . }}</li>
