@@ -133,17 +133,27 @@
   ],
   "projects": [
     {
-      "name": "GoMES",
-      "startDate": "May 2024",
+      "name": "slowrm",
+      "startDate": "July 2026",
       "endDate": "",
-      "description": "A real-time, event-driven framework written in Go for dynamic, concurrent data collection and processing.",
-      "url": "https://github.com/nburnet1/gomes",
+      "description": "A lightweight ORM for Ignition.",
+      "url": "https://github.com/nburnet1/slowrm",
       "highlights": [
-        "Built a namespace engine to contextualize data in a hierarchical structure.",
-        "Implemented support for namespace governance and scoped control.",
-        "Decoupled services using gRPC for efficient inter-service communication.",
-        "Enabled automatic MQTT topic generation from the namespace engine.",
-        "Integrated an htmx admin UI for configuration and monitoring."
+        "Provides an ORM for Ignition on top of SQLAlchemy Core.",
+        "Implements a session context manager, dirty tracking and schema sync helpers.",
+        "Dynamically gets the sql dialect based off of database connection."
+      ]
+    },
+    {
+      "name": "Ignition Package Maker",
+      "startDate": "June 2026",
+      "endDate": "",
+      "description": "A CLI for packaging Ignition script modules as Python packages.",
+      "url": "https://github.com/nburnet1/ignition-package-maker",
+      "highlights": [
+        "Detects projects and scaffolds package configuration.",
+        "Converts Ignition script modules into standard Python package layouts.",
+        "Enables pip-based deployment to Ignition gateways."
       ]
     },
     {
