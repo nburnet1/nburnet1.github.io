@@ -305,15 +305,23 @@
         <section id="projects" class="mb-10">
           <h2 class="font-bold text-xl mb-4 text-gray-50">Projects</h2>
             <div class="mb-8">
+              <h3 class="text-lg font-semibold text-gray-100">Ignition Apache Camel</h3>
+              <p class="text-gray-300 mt-1">Gateway module that runs Apache Camel routes inside Ignition 8.3.</p>
+              <ul class="list-disc ml-6 mt-2 text-gray-300">
+                  <li>Embedded Apache Camel in Ignition so developers can connect manufacturing data to external systems through YAML or Jython routes without deploying a separate integration service.</li>
+                  <li>Built Java adapters for Ignition tags, scripts and messaging, bringing platform-specific operations into Camel&#39;s routing framework.</li>
+                  <li>Designed reusable connection and certificate configuration with separate runtimes per integration, allowing shared settings without sharing live runtime objects.</li>
+              </ul>
+            </div>
+            <div class="mb-8">
               <a href="https:&#x2F;&#x2F;github.com&#x2F;nburnet1&#x2F;slowrm" class="group inline-flex items-center gap-2 hover:underline">
                 <h3 class="text-lg font-semibold text-gray-100 group-hover:text-gray-300">slowrm</h3>
                 <img src="./external-link.svg" class="w-4 h-4"/>
               </a>
               <p class="text-gray-300 mt-1">A lightweight ORM for Ignition.</p>
               <ul class="list-disc ml-6 mt-2 text-gray-300">
-                  <li>Provides an ORM for Ignition on top of SQLAlchemy Core.</li>
-                  <li>Implements a session context manager, dirty tracking and schema sync helpers.</li>
-                  <li>Dynamically gets the sql dialect based off of database connection.</li>
+                  <li>Bridged SQLAlchemy&#39;s query compiler with Ignition&#39;s database APIs, enabling model-based persistence through existing Gateway database connections.</li>
+                  <li>Implemented object identity tracking, change detection and transaction-scoped sessions to replace repetitive persistence code and roll back uncommitted work automatically.</li>
               </ul>
             </div>
             <div class="mb-8">
@@ -323,9 +331,8 @@
               </a>
               <p class="text-gray-300 mt-1">A CLI for packaging Ignition script modules as Python packages.</p>
               <ul class="list-disc ml-6 mt-2 text-gray-300">
-                  <li>Detects projects and scaffolds package configuration.</li>
-                  <li>Converts Ignition script modules into standard Python package layouts.</li>
-                  <li>Enables pip-based deployment to Ignition gateways.</li>
+                  <li>Built a Python CLI that converts Ignition project scripts into distributable packages, enabling shared libraries to be versioned and installed with pip.</li>
+                  <li>Preserved module import paths and package metadata across rebuilds, allowing developers to maintain scripts in Ignition while distributing them through standard Python tooling.</li>
               </ul>
             </div>
             <div class="mb-8">
@@ -335,10 +342,8 @@
               </a>
               <p class="text-gray-300 mt-1">Barebones, stub-driven auto-imports for Ignition scripting projects.</p>
               <ul class="list-disc ml-6 mt-2 text-gray-300">
-                  <li>Generates Python stubs from Ignition project structure for robust autocompletion.</li>
-                  <li>Builtin generator converts Python 2 type comments into Python 3 compatible type hints for modern tooling (Pyright).</li>
-                  <li>Indexes top-level classes and functions across generated stubs for fast symbol search and import suggestions.</li>
-                  <li>Designed to be configurable and well-documented to support diverse Ignition project use cases.</li>
+                  <li>Built a VS Code extension that generates Python type stubs from Ignition scripts, making project APIs available to Pyright without changing the deployed code.</li>
+                  <li>Translated Python 2 type comments into annotated signatures and indexed symbols for Quick Fix imports, reducing manual lookup of nested script paths.</li>
               </ul>
             </div>
         </section>

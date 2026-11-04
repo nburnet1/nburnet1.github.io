@@ -1,0 +1,8 @@
+{
+  "name": "jsonresume-theme-noah",
+  "version": "1.0.0",
+  "description": "High-contrast, one-page, print-first JSON Resume theme",
+  "type": "module",
+  "main": "index.js",
+  "license": "GPL-3.0-only"
+}

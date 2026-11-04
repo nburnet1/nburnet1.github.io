@@ -144,10 +144,15 @@
           <h2 class="font-bold text-xl mb-4 text-gray-50">Projects</h2>
           {{#projects}}
             <div class="mb-8">
+              {{#url}}
               <a href="{{ url }}" class="group inline-flex items-center gap-2 hover:underline">
                 <h3 class="text-lg font-semibold text-gray-100 group-hover:text-gray-300">{{ name }}</h3>
                 <img src="./external-link.svg" class="w-4 h-4"/>
               </a>
+              {{/url}}
+              {{^url}}
+              <h3 class="text-lg font-semibold text-gray-100">{{ name }}</h3>
+              {{/url}}
               <p class="text-gray-300 mt-1">{{ description }}</p>
               <ul class="list-disc ml-6 mt-2 text-gray-300">
                 {{#highlights}}

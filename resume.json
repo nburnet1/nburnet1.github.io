@@ -26,8 +26,7 @@
     {
       "name": "Intellic Integration",
       "position": "Industrial Software Engineer",
-      "startDate": "December 2023",
-      "endDate": "",
+      "startDate": "2023-12",
       "highlights": [
         "Led development of large-scale, distributed industrial applications using Ignition and Unified Namespace (UNS) architecture.",
         "Applied domain-driven design (DDD) principles to model complex operational and business workflows.",
@@ -40,14 +39,13 @@
         "Delivered solutions across multiple industrial sectors, including food & beverage and battery manufacturing."
       ],
       "summary": "Intellic Integration",
-      "url": "https://intellicintegration.com/",
-      "location": null
+      "url": "https://intellicintegration.com/"
     },
     {
       "name": "Sierra Nevada Brewing Co.",
       "position": "Software Developer Intern",
-      "startDate": "April 2023",
-      "endDate": "November 2023",
+      "startDate": "2023-04",
+      "endDate": "2023-11",
       "highlights": [
         "Developed warehouse and quality-related systems using Ignition.",
         "Wrote and optimized SQL stored procedures and views for inventory and laboratory reporting.",
@@ -61,8 +59,8 @@
     {
       "name": "Microtech Knives",
       "position": "Network Technician",
-      "startDate": "December 2021",
-      "endDate": "April 2023",
+      "startDate": "2021-12",
+      "endDate": "2023-04",
       "highlights": [
         "Deployed and maintained Linux-based infrastructure supporting internal systems.",
         "Built and maintained Docker images to standardize development and workstation environments.",
@@ -79,8 +77,8 @@
       "institution": "University of North Carolina Asheville",
       "area": "Computer Science",
       "studyType": "Bachelor of Science",
-      "startDate": "May 2020",
-      "endDate": "December 2023",
+      "startDate": "2020-05",
+      "endDate": "2023-12",
       "score": "3.78",
       "courses": []
     }
@@ -133,40 +131,43 @@
   ],
   "projects": [
     {
+      "name": "Ignition Apache Camel",
+      "startDate": "2026-11",
+      "description": "Gateway module that runs Apache Camel routes inside Ignition 8.3.",
+      "highlights": [
+        "Embedded Apache Camel in Ignition so developers can connect manufacturing data to external systems through YAML or Jython routes without deploying a separate integration service.",
+        "Built Java adapters for Ignition tags, scripts and messaging, bringing platform-specific operations into Camel's routing framework.",
+        "Designed reusable connection and certificate configuration with separate runtimes per integration, allowing shared settings without sharing live runtime objects."
+      ]
+    },
+    {
       "name": "slowrm",
-      "startDate": "July 2026",
-      "endDate": "",
+      "startDate": "2026-07",
       "description": "A lightweight ORM for Ignition.",
       "url": "https://github.com/nburnet1/slowrm",
       "highlights": [
-        "Provides an ORM for Ignition on top of SQLAlchemy Core.",
-        "Implements a session context manager, dirty tracking and schema sync helpers.",
-        "Dynamically gets the sql dialect based off of database connection."
+        "Bridged SQLAlchemy's query compiler with Ignition's database APIs, enabling model-based persistence through existing Gateway database connections.",
+        "Implemented object identity tracking, change detection and transaction-scoped sessions to replace repetitive persistence code and roll back uncommitted work automatically."
       ]
     },
     {
       "name": "Ignition Package Maker",
-      "startDate": "June 2026",
-      "endDate": "",
+      "startDate": "2026-06",
       "description": "A CLI for packaging Ignition script modules as Python packages.",
       "url": "https://github.com/nburnet1/ignition-package-maker",
       "highlights": [
-        "Detects projects and scaffolds package configuration.",
-        "Converts Ignition script modules into standard Python package layouts.",
-        "Enables pip-based deployment to Ignition gateways."
+        "Built a Python CLI that converts Ignition project scripts into distributable packages, enabling shared libraries to be versioned and installed with pip.",
+        "Preserved module import paths and package metadata across rebuilds, allowing developers to maintain scripts in Ignition while distributing them through standard Python tooling."
       ]
     },
     {
       "name": "Ignition Sift (VS Code Extension)",
-      "startDate": "December 2025",
-      "endDate": "",
+      "startDate": "2025-12",
       "description": "Barebones, stub-driven auto-imports for Ignition scripting projects.",
       "url": "https://github.com/nburnet1/ignition-sift",
       "highlights": [
-        "Generates Python stubs from Ignition project structure for robust autocompletion.",
-        "Builtin generator converts Python 2 type comments into Python 3 compatible type hints for modern tooling (Pyright).",
-        "Indexes top-level classes and functions across generated stubs for fast symbol search and import suggestions.",
-        "Designed to be configurable and well-documented to support diverse Ignition project use cases."
+        "Built a VS Code extension that generates Python type stubs from Ignition scripts, making project APIs available to Pyright without changing the deployed code.",
+        "Translated Python 2 type comments into annotated signatures and indexed symbols for Quick Fix imports, reducing manual lookup of nested script paths."
       ]
     }
   ]

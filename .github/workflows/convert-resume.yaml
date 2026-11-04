@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - resume.json
+      - theme/**
 
 jobs:
   convert-resume: 
@@ -11,29 +12,23 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.WEBSITE_BOT_PAT }}
     
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
         
       - name: Install dependencies
-        run: npm install -g resumed jsonresume-theme-macchiato && sudo apt update -y && sudo apt install -y wkhtmltopdf
+        run: npm ci && npx puppeteer browsers install chrome-headless-shell
 
-      - name: JSON -> HTML
-        run: resumed render ./resume.json --theme jsonresume-theme-macchiato --output ./public/resume.html
+      - name: Validate resume.json against the JSON Resume schema
+        run: npm run resume:validate
 
-      - name: HTML -> PDF
-        run: |
-          wkhtmltopdf \
-            --page-size Letter \
-            --disable-smart-shrinking \
-            --zoom 1.5 \
-            ./public/resume.html \
-            ./public/Noah_Burnette_Resume.pdf
+      - name: JSON -> PDF (one-page, print-friendly theme in ./theme)
+        run: npm run resume:pdf -- --puppeteer-arg=--no-sandbox
 
       - name: Commit PDF
         run: |

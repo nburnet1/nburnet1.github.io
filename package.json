@@ -7,7 +7,10 @@
     "build": "node build.js",
     "watch": "node watch.js",
     "serve": "live-server public",
-    "dev": "concurrently \"npm run watch\" \"npm run serve\""
+    "dev": "concurrently \"npm run watch\" \"npm run serve\"",
+    "resume:validate": "resumed validate resume.json",
+    "resume:html": "resumed render resume.json --theme jsonresume-theme-noah --output public/resume.html",
+    "resume:pdf": "resumed export resume.json --theme jsonresume-theme-noah --output public/Noah_Burnette_Resume.pdf"
   },
   "keywords": [
     "resume",
@@ -26,6 +29,9 @@
     "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
-    "concurrently": "^8.2.0"
+    "concurrently": "^8.2.0",
+    "puppeteer": "^25.16.0",
+    "resumed": "^7.1.0",
+    "jsonresume-theme-noah": "file:./theme"
   }
 }
