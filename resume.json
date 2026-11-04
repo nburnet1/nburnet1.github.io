@@ -89,20 +89,22 @@
       "keywords": [
         "Python",
         "HTML/CSS",
+        "Java",
         "TypeScript",
         "SQL",
-        "Go",
-        "Java"
+        "Go"
       ]
     },
     {
       "name": "Frameworks/Libraries",
       "keywords": [
-        "Flask",
         "FastAPI",
+        "Apache Camel", 
+        "Ignition SDK", 
+        "JUnit",
+        "Pytest",
         "React",
         "htmx",
-        "Gin",
         "Node.js"
       ]
     },
@@ -133,10 +135,10 @@
     {
       "name": "Ignition Apache Camel",
       "startDate": "2026-11",
-      "description": "Gateway module that runs Apache Camel routes inside Ignition 8.3.",
+      "description": "Java module that runs Apache Camel routes inside Ignition 8.3.",
       "highlights": [
         "Embedded Apache Camel in Ignition so developers can connect manufacturing data to external systems through YAML or Jython routes without deploying a separate integration service.",
-        "Built Java adapters for Ignition tags, scripts and messaging, bringing platform-specific operations into Camel's routing framework.",
+        "Built adapters for Ignition tags, scripts and messaging, bringing platform-specific operations into Camel's routing framework.",
         "Designed reusable connection and certificate configuration with separate runtimes per integration, allowing shared settings without sharing live runtime objects."
       ]
     },
