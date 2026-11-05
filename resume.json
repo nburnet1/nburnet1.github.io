@@ -135,6 +135,7 @@
   "projects": [
     {
       "name": "Ignition Apache Camel",
+      "url": "https://github.com/nburnet1/ignition-apache-camel",
       "startDate": "2026-11",
       "description": "Java module that runs Apache Camel routes inside Ignition 8.3.",
       "highlights": [
