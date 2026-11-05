@@ -1,7 +1,7 @@
 const chokidar = require('chokidar');
 const { exec } = require('child_process');
 
-const watcher = chokidar.watch(['index.mustache', 'resume.json'], {
+const watcher = chokidar.watch(['index.mustache', 'books.mustache', 'partials', 'resume.json', 'books.csv'], {
   ignoreInitial: true
 });
 

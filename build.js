@@ -13,18 +13,66 @@ const displayDate = (date) => {
 const withDisplayDates = (items = []) =>
   items.map((item) => ({ ...item, startDate: displayDate(item.startDate), endDate: displayDate(item.endDate) }));
 
+// Minimal RFC 4180 CSV parser: quoted fields may contain commas, newlines and "" escapes.
+const parseCsv = (text) => {
+  const rows = [];
+  let row = [];
+  let field = '';
+  let quoted = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (quoted) {
+      if (c === '"' && text[i + 1] === '"') { field += '"'; i++; }
+      else if (c === '"') quoted = false;
+      else field += c;
+    } else if (c === '"') quoted = true;
+    else if (c === ',') { row.push(field); field = ''; }
+    else if (c === '\n' || c === '\r') {
+      if (c === '\r' && text[i + 1] === '\n') i++;
+      row.push(field); rows.push(row); row = []; field = '';
+    } else field += c;
+  }
+  if (field || row.length) { row.push(field); rows.push(row); }
+  const [header, ...records] = rows.filter((r) => r.some((f) => f.trim()));
+  return records.map((r) => Object.fromEntries(header.map((h, i) => [h.trim(), (r[i] || '').trim()])));
+};
+
+// books.csv rows are grouped by status in this order; rows keep their file order within a group.
+const BOOK_STATUSES = ['Reading', 'On the Shelf', 'Read'];
+
+const booksByStatus = (books) => {
+  const unknown = books.filter((b) => !BOOK_STATUSES.some((s) => s.toLowerCase() === b.status.toLowerCase()));
+  if (unknown.length) {
+    throw new Error(`books.csv: unknown status for ${unknown.map((b) => `"${b.title}" (${b.status})`).join(', ')}; use ${BOOK_STATUSES.join(', ')}`);
+  }
+  return BOOK_STATUSES.map((status) => ({
+    status,
+    books: books.filter((b) => b.status.toLowerCase() === status.toLowerCase()),
+  })).filter((group) => group.books.length);
+};
+
 async function build() {
-  const template = await fs.readFile('index.mustache', 'utf-8');
   const resume = await fs.readJson('resume.json');
-  const html = Mustache.render(template, {
+  const books = parseCsv(await fs.readFile('books.csv', 'utf-8'));
+  const partials = { nav: await fs.readFile('partials/nav.mustache', 'utf-8') };
+  const view = {
     ...resume,
     work: withDisplayDates(resume.work),
     education: withDisplayDates(resume.education),
     projects: withDisplayDates(resume.projects),
-  });
-  await fs.outputFile('public/index.html', html);
+    bookshelf: booksByStatus(books),
+  };
 
-  console.log('Build complete! Output: public/index.html');
+  const pages = [
+    ['index.mustache', 'public/index.html'],
+    ['books.mustache', 'public/books.html'],
+  ];
+  for (const [source, output] of pages) {
+    const template = await fs.readFile(source, 'utf-8');
+    await fs.outputFile(output, Mustache.render(template, view, partials));
+  }
+
+  console.log(`Build complete! Output: ${pages.map(([, output]) => output).join(', ')}`);
 }
 
 build();

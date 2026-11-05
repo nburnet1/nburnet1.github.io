@@ -30,13 +30,14 @@
       "highlights": [
         "Led development of large-scale, distributed industrial applications using Ignition and Unified Namespace (UNS) architecture.",
         "Applied domain-driven design (DDD) principles to model complex operational and business workflows.",
-        "Designed and implemented core developer infrastructure, including a custom debugging library, lightweight ORM, and automated test discovery library.",
+        "Designed and implemented reusable developer infrastructure in Python and Java, including a custom Java-based Ignition module for concurrent data structures, a lightweight ORM, and an automated test discovery library.",
         "Developed Python microservices to support client-specific operational requirements.",
         "Built internal tooling in Go and Python to accelerate deployment workflows and improve engineering efficiency.",
+        "Applied test-driven development (TDD) practices and automated testing to improve code reliability and maintainability.",
         "Designed and implemented CI/CD pipelines to automate deployments and reduce regression risk.",
-        "Mentored junior engineers through code reviews and architectural discussions, increasing code quality and engineering standards.",
-        "Authored comprehensive technical documentation to support stakeholder adoption and long-term system maintainability.",
-        "Delivered solutions across multiple industrial sectors, including food & beverage and battery manufacturing."
+        "Mentored junior engineers through code reviews and architectural discussions, improving code quality and engineering standards.",
+        "Authored technical documentation to support stakeholder adoption and long-term system maintainability.",
+        "Delivered solutions across multiple industrial sectors, including food and beverage and battery manufacturing."
       ],
       "summary": "Intellic Integration",
       "url": "https://intellicintegration.com/"
@@ -99,8 +100,8 @@
       "name": "Frameworks/Libraries",
       "keywords": [
         "FastAPI",
-        "Apache Camel", 
-        "Ignition SDK", 
+        "Apache Camel",
+        "Ignition SDK",
         "JUnit",
         "unittest",
         "React",
